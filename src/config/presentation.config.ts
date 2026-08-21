@@ -162,7 +162,7 @@ export const DOSSIER_FILES: DossierFile[] = [
   {
     id: "intro",
     fileNumber: 1,
-    title: "Executive Introduction",
+    title: "Introduction",
     subtitle: "Vision, Purpose & Enterprise Value Proposition",
     badge: "FOUNDATION",
     icon: "Building2",

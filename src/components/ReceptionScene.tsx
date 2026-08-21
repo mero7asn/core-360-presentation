@@ -196,13 +196,12 @@ export function ReceptionScene({
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-xs font-mono tracking-wider uppercase backdrop-blur-md">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>Welcome inside the headquarters of Core 360 ERP</span>
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight">
                 Reception Desk
               </h1>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
-                Welcome inside the headquarters of <strong className="text-amber-400 font-bold">Core 360 ERP</strong>. The receptionist counter ahead holds the project dossiers. Click on the reception desk to take a closer look.
+                The receptionist counter ahead holds the project dossiers. Click on the reception desk to take a closer look.
               </p>
             </div>
 
@@ -273,13 +272,12 @@ export function ReceptionScene({
             <div className="text-center max-w-3xl mb-4">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-xs font-mono tracking-wider uppercase mb-2 backdrop-blur-md">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>Looking at the Reception Desk Surface · Click Any Folder to Open</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-                Executive Desk Folders
+                Desk Folders
               </h2>
               <p className="text-xs sm:text-sm text-slate-200 font-light leading-relaxed">
-                4 physical leather dossiers are placed on the counter. Click on any file to open the slide viewer; close it anytime to return to the desk.
+                Click on any file to open the slide viewer
               </p>
             </div>
 
