@@ -196,10 +196,10 @@ export function ReceptionScene({
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-xs font-mono tracking-wider uppercase backdrop-blur-md">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>You have entered the Reception Lobby</span>
+                <span>Welcome inside the headquarters of Core 360 ERP</span>
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight">
-                Reception Atrium
+                Reception Desk
               </h1>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
                 Welcome inside the headquarters of <strong className="text-amber-400 font-bold">Core 360 ERP</strong>. The receptionist counter ahead holds the project dossiers. Click on the reception desk to take a closer look.
@@ -211,7 +211,7 @@ export function ReceptionScene({
               onClick={handleApproachDesk}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="relative p-6 sm:p-8 rounded-3xl bg-slate-900/90 border-2 border-amber-500/60 shadow-[0_0_50px_rgba(245,158,11,0.25)] hover:border-amber-400 cursor-pointer max-w-xl w-full backdrop-blur-xl group transition-all"
+              className="relative p-6 sm:p-8 rounded-3xl bg-slate-900/10 border border-amber-500/40 shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-amber-400 cursor-pointer max-w-xl w-full backdrop-blur-md group transition-all"
             >
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
@@ -219,7 +219,6 @@ export function ReceptionScene({
                     <ZoomIn className="w-6 h-6" />
                   </div>
                   <div className="text-left">
-                    <div className="text-xs font-mono font-bold text-amber-400 uppercase">Interactive Hotspot</div>
                     <div className="text-lg font-black text-white">RECEPTION COUNTER & DESK</div>
                   </div>
                 </div>
@@ -260,7 +259,7 @@ export function ReceptionScene({
                 onClick={handleNextClick}
                 className="px-6 py-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-amber-500 text-amber-400 hover:text-white text-xs font-bold flex items-center gap-2 cursor-pointer"
               >
-                <span>Take Elevator to 6 Floors</span>
+                <span>Take Elevator</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

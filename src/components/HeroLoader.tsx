@@ -122,12 +122,6 @@ export function HeroLoader({ onEnter }: HeroLoaderProps) {
 
         {/* Center Portal Section */}
         <main className="flex-1 flex flex-col items-center justify-center max-w-5xl mx-auto w-full text-center py-6">
-          <div className="inline-block px-5 py-2 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md mb-6">
-            <span className="text-xs sm:text-sm font-mono text-amber-300 font-bold">
-              Track: AI Software Development (9 Months Diploma)
-            </span>
-          </div>
-
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9] mb-3">
             <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent">
               CORE 360
@@ -135,12 +129,6 @@ export function HeroLoader({ onEnter }: HeroLoaderProps) {
             <br />
             <span className="text-white">ERP SYSTEM</span>
           </h1>
-
-          <div className="inline-block px-5 py-2 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md mb-6">
-            <span className="text-xs sm:text-sm font-mono text-amber-300 font-bold">
-              Track: AI Software Development (9 Months Diploma)
-            </span>
-          </div>
 
           {/* Presented By Section with exact team members */}
           <div className="w-full max-w-4xl mb-8">
