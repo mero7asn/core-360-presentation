@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { soundFX } from '../utils/sound';
 import { PROJECT_METADATA } from '../config/presentation.config';
-import { Shield, Sparkles, ArrowRight, UserCheck, ChevronRight } from 'lucide-react';
+import { Shield, ArrowRight, UserCheck, ChevronRight } from 'lucide-react';
 
 interface HeroLoaderProps {
   onEnter: () => void;
@@ -91,11 +91,8 @@ export function HeroLoader({ onEnter }: HeroLoaderProps) {
               <span className="text-slate-950 font-black text-xl tracking-tighter">360</span>
             </div>
             <div>
-              <div className="text-lg font-black tracking-wider text-white flex items-center gap-2">
-                <span>{PROJECT_METADATA.projectName}</span>
-                <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-amber-950/80 text-amber-300 border border-amber-500/40 font-mono">
-                  ENTERPRISE 2026
-                </span>
+              <div className="text-lg font-black tracking-wider text-white">
+                {PROJECT_METADATA.projectName}
               </div>
               <div className="text-xs text-amber-300/90 font-mono font-semibold">
                 Track: {PROJECT_METADATA.trackName} ({PROJECT_METADATA.diplomaDuration})
@@ -107,11 +104,11 @@ export function HeroLoader({ onEnter }: HeroLoaderProps) {
           <div className="flex flex-wrap items-center gap-3">
             <div className="px-4 py-2 rounded-2xl bg-slate-900/90 border border-slate-700/80 backdrop-blur-md text-left">
               <div className="text-[10px] uppercase font-mono text-slate-400">Supervisor</div>
-              <div className="text-xs font-bold text-amber-300">{PROJECT_METADATA.supervisor}</div>
+              <div className="text-sm font-bold text-amber-300">{PROJECT_METADATA.supervisor}</div>
             </div>
             <div className="px-4 py-2 rounded-2xl bg-slate-900/90 border border-slate-700/80 backdrop-blur-md text-left">
               <div className="text-[10px] uppercase font-mono text-slate-400">Track Head</div>
-              <div className="text-xs font-bold text-amber-300">{PROJECT_METADATA.trackHead}</div>
+              <div className="text-sm font-bold text-amber-300">{PROJECT_METADATA.trackHead}</div>
             </div>
             <div className="glass rounded-full px-3.5 py-1.5 flex items-center gap-2">
               <span className="relative flex h-2 w-2">
@@ -125,9 +122,10 @@ export function HeroLoader({ onEnter }: HeroLoaderProps) {
 
         {/* Center Portal Section */}
         <main className="flex-1 flex flex-col items-center justify-center max-w-5xl mx-auto w-full text-center py-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-xs font-mono tracking-wider uppercase mb-4 backdrop-blur-md shadow-lg shadow-amber-500/10">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-            <span>Building Entrance & Master Blueprint</span>
+          <div className="inline-block px-5 py-2 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md mb-6">
+            <span className="text-xs sm:text-sm font-mono text-amber-300 font-bold">
+              Track: AI Software Development (9 Months Diploma)
+            </span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9] mb-3">
@@ -193,7 +191,7 @@ export function HeroLoader({ onEnter }: HeroLoaderProps) {
                 disabled={isTransitioning}
                 className="group w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-black text-sm tracking-wider uppercase transition-all duration-300 hover:shadow-[0_0_50px_rgba(245,158,11,0.5)] hover:scale-[1.03] active:scale-[0.98] cursor-pointer flex items-center justify-center gap-3 shadow-2xl"
               >
-                <span>Enter Building → Reception Desk</span>
+                <span>Enter Building</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
               </button>
             )}
