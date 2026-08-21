@@ -77,9 +77,11 @@ export function DossierModal({
             <div>
               <div className="flex items-center gap-2.5 mb-2">
                 <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 text-amber-400 border border-amber-500/40">
-                  📁 CONFIDENTIAL DOSSIER #{currentFile.fileNumber} · {currentFile.badge}
+                  📁 {currentFile.id === 'intro' ? 'SECTION 01 · ERP OVERVIEW' : `DOSSIER #${currentFile.fileNumber} · ${currentFile.badge}`}
                 </span>
-                <span className="text-xs font-mono text-slate-400">CORE 360 ERP SPECIFICATION</span>
+                {currentFile.id !== 'intro' && (
+                  <span className="text-xs font-mono text-slate-400">CORE 360 ERP SPECIFICATION</span>
+                )}
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
                 {currentFile.title}
@@ -91,11 +93,11 @@ export function DossierModal({
 
             {/* Quick Metrics */}
             {currentFile.metrics && (
-              <div className="flex gap-3 shrink-0">
+              <div className="flex flex-wrap sm:flex-nowrap gap-3 shrink-0">
                 {currentFile.metrics.map((m, i) => (
-                  <div key={i} className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 text-right min-w-[120px]">
-                    <div className="text-[10px] uppercase font-mono text-slate-400">{m.label}</div>
-                    <div className="text-sm sm:text-base font-black text-amber-400 mt-0.5">{m.value}</div>
+                  <div key={i} className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 text-left sm:text-right min-w-[130px]">
+                    <div className="text-xs sm:text-sm font-black text-amber-400">{m.value}</div>
+                    <div className="text-[10px] font-mono text-slate-400 mt-0.5">{m.label}</div>
                   </div>
                 ))}
               </div>
@@ -211,7 +213,9 @@ export function DossierModal({
         <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-slate-900 border-t border-slate-800 gap-4 shrink-0">
           <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
             <BookOpen className="w-4 h-4 text-amber-400" />
-            <span>FILE {currentFile.fileNumber} OF {DOSSIER_FILES.length} · COMPLETE SPECIFICATION</span>
+            <span>
+              {currentFile.id === 'intro' ? 'SECTION 01 • ERP OVERVIEW' : `FILE ${currentFile.fileNumber} OF ${DOSSIER_FILES.length} · COMPLETE SPECIFICATION`}
+            </span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -232,7 +236,7 @@ export function DossierModal({
               }}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/25 transition-all transform hover:scale-105 cursor-pointer"
             >
-              <span>Explore Department Floors (1–6)</span>
+              <span>Explore ERP Modules (1–6)</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>

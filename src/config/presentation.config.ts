@@ -162,46 +162,42 @@ export const DOSSIER_FILES: DossierFile[] = [
   {
     id: "intro",
     fileNumber: 1,
-    title: "Introduction",
-    subtitle: "Vision, Purpose & Enterprise Value Proposition",
+    title: "Why ERP Matters",
+    subtitle: "How ERP transforms fragmented business operations into one connected system",
     badge: "FOUNDATION",
     icon: "Building2",
-    summary: "Core 360 ERP is an all-in-one, modular cloud enterprise resource planning platform engineered to unify fragmented business processes across Sales, Human Resources, Payroll Calculation, Customer Service, Marketing, and Executive Governance.",
+    summary: "As companies grow, their departments often become isolated, relying on separate systems, spreadsheets, and manual processes. ERP brings these functions together into one integrated platform, creating a single source of accurate information and enabling faster, smarter, and more efficient business decisions.",
     sections: [
       {
         title: "Executive Summary",
-        content: "Engineered specifically for mid-to-large scale modern enterprises seeking to eliminate administrative friction and achieve real-time operational transparency across all commercial and fiscal departments."
+        content: "ERP systems connect the key functions of a company into one unified environment. Instead of managing finance, HR, sales, inventory, operations, and customer information through disconnected tools, employees work with shared data and standardized processes. This reduces duplication, improves efficiency, increases visibility, and gives management a complete view of the business."
       },
       {
-        title: "Core Architectural Pillars",
+        title: "Why Companies Need ERP",
         items: [
           {
-            title: "Single Source of Truth (SSOT)",
-            description: "Elimination of disparate database silos by operating on a unified relational-document schema.",
-            highlight: "100% Data Cohesion"
+            title: "01 — ONE SOURCE OF INFORMATION",
+            description: "All departments work with the same up-to-date business data, reducing duplication, inconsistency, and conflicting information."
           },
           {
-            title: "Frictionless Workflow Automation",
-            description: "Event-driven state transitions from lead acquisition to offer generation, contract signing, employee onboarding, and payroll settlement.",
-            highlight: "Zero Manual Re-entry"
+            title: "02 — AUTOMATED PROCESSES",
+            description: "ERP reduces repetitive manual work by automating routine processes such as approvals, purchasing, payroll, inventory updates, and reporting."
           },
           {
-            title: "Role-Based Security & Compliance",
-            description: "Granular access controls (RBAC), multi-tenant isolation, cryptographic audit trails, and banking compliance.",
-            highlight: "Enterprise Defense"
+            title: "03 — CONNECTED DEPARTMENTS",
+            description: "Finance, HR, Sales, Inventory, Operations, and other departments work together through one integrated system instead of isolated tools."
           },
           {
-            title: "Data-Driven Intelligence",
-            description: "Live executive telemetry, conversion funnels, SLA health monitors, and fiscal risk projections.",
-            highlight: "Predictive Analytics"
+            title: "04 — BETTER DECISION-MAKING",
+            description: "Management gains real-time visibility into business performance, allowing faster decisions based on accurate and centralized information."
           }
         ]
       }
     ],
     metrics: [
-      { label: "Connected Domains", value: "6 Core Modules" },
-      { label: "Data Latency", value: "< 24ms Real-Time" },
-      { label: "Deployment Model", value: "Cloud / Micro-Kernel" }
+      { label: "Finance • HR • Sales • Operations", value: "ONE CONNECTED SYSTEM" },
+      { label: "Accurate information across the business", value: "REAL-TIME VISIBILITY" },
+      { label: "Faster decisions based on unified data", value: "BETTER DECISIONS" }
     ]
   },
   {
