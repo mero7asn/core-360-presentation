@@ -741,7 +741,8 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       { id: "gl-curr", label: "1. GENERAL LEDGER & MULTI-CURRENCY", value: "General Ledger", subtext: "Automated double-entry bookkeeping with real-time balance sheets, profit & loss statements, and multi-currency support.", trend: "up", trendValue: "Real-Time" },
       { id: "ar-ap", label: "2. ACCOUNTS RECEIVABLE & PAYABLE (AR/AP)", value: "AR / AP Management", subtext: "Streamlined invoice creation, automated payment reminders, vendor bill tracking, and reconciliation.", trend: "up", trendValue: "Automated" },
       { id: "tax-comp", label: "3. TAX & COMPLIANCE AUTOMATION", value: "Tax Compliance", subtext: "Automated tax rule calculation (VAT, sales tax, withholding) with exportable audit-ready financial reports.", trend: "up", trendValue: "Audit-Ready" },
-      { id: "cash-flow", label: "4. CASH FLOW & EXPENSE TRACKING", value: "Cash Flow Tracking", subtext: "End-to-end expense logging, petty cash tracking, and dynamic cash flow forecasting dashboards.", trend: "up", trendValue: "Dynamic Forecast" }
+      { id: "cash-flow", label: "4. CASH FLOW & EXPENSE TRACKING", value: "Cash Flow Tracking", subtext: "End-to-end expense logging, petty cash tracking, and dynamic cash flow forecasting dashboards.", trend: "up", trendValue: "Dynamic Forecast" },
+      { id: "bank-recon", label: "5. BANK RECONCILIATION & AUDIT TRAILS", value: "Bank Reconciliation", subtext: "Secure transaction matching with bank feeds, granular permission controls, and complete historical audit logs.", trend: "up", trendValue: "Audit Logs" }
     ],
 
     features: [
@@ -867,7 +868,8 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       { id: "inv-wh", label: "1. MULTI-WAREHOUSE & LOCATION CONTROL", value: "Multi-Warehouse", subtext: "Centralized tracking of stock levels, bin locations, transfers, and transit goods across multiple facilities.", trend: "up", trendValue: "Multi-Facility" },
       { id: "inv-sku", label: "2. SKU, BATCH & EXPIRY MANAGEMENT", value: "Batch & Expiry", subtext: "Granular tracking by serial numbers, barcodes, batch/lot numbers, and automated expiration date alerts.", trend: "up", trendValue: "Barcode/Lot" },
       { id: "inv-alerts", label: "3. AUTOMATED STOCK LEVEL ALERTS", value: "Stock Level Alerts", subtext: "Dynamic reorder point calculation, low-stock notifications, and automatic purchase requisition triggers.", trend: "up", trendValue: "Auto Reorder" },
-      { id: "inv-val", label: "4. STOCK VALUATION & COSTING METHODS", value: "Valuation & Costing", subtext: "Support for standard costing methods (FIFO, LIFO, Weighted Average) integrated directly with the General Ledger.", trend: "up", trendValue: "FIFO / LIFO" }
+      { id: "inv-val", label: "4. STOCK VALUATION & COSTING METHODS", value: "Valuation & Costing", subtext: "Support for standard costing methods (FIFO, LIFO, Weighted Average) integrated directly with the General Ledger.", trend: "up", trendValue: "FIFO / LIFO" },
+      { id: "inv-dead", label: "5. DEAD STOCK & CYCLE COUNT ANALYTICS", value: "Cycle Counting", subtext: "Rapid barcode-assisted cycle counting, discrepancy auditing, and slow-moving/dead-stock identification.", trend: "up", trendValue: "Cycle Counting" }
     ],
 
     features: [
@@ -993,7 +995,8 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       { id: "scm-po", label: "1. PROCUREMENT & PURCHASE ORDER WORKFLOW", value: "Procurement Workflow", subtext: "Automated RFQs (Request for Quotations), PO generation, vendor comparison matrices, and multi-tier approval chains.", trend: "up", trendValue: "Multi-Tier Approvals" },
       { id: "scm-vendor", label: "2. SUPPLIER & VENDOR RELATIONSHIP HUB", value: "Supplier Hub", subtext: "Centralized supplier directory with scorecards tracking on-time delivery, quality ratings, and pricing history.", trend: "up", trendValue: "Vendor Scorecards" },
       { id: "scm-qc", label: "3. GOODS RECEIPT & QUALITY INSPECTION (QC)", value: "QC & GRN Logging", subtext: "Digital GRN (Goods Received Note) logging with built-in quality check workflows, pass/fail status, and return-to-vendor (RTV) handling.", trend: "up", trendValue: "Digital GRN & QC" },
-      { id: "scm-demand", label: "4. DEMAND FORECASTING & REPLENISHMENT", value: "Demand Forecasting", subtext: "Lead-time analytics and predictive demand planning to eliminate stockouts and optimize bulk purchasing.", trend: "up", trendValue: "Predictive Planning" }
+      { id: "scm-demand", label: "4. DEMAND FORECASTING & REPLENISHMENT", value: "Demand Forecasting", subtext: "Lead-time analytics and predictive demand planning to eliminate stockouts and optimize bulk purchasing.", trend: "up", trendValue: "Predictive Planning" },
+      { id: "scm-log", label: "5. LOGISTICS & ORDER FULFILLMENT", value: "Order Fulfillment", subtext: "Seamless integration from sales orders to pick-pack-ship stages with automated shipping status updates.", trend: "up", trendValue: "Pick-Pack-Ship" }
     ],
 
     features: [
@@ -1119,7 +1122,8 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       { id: "wrk-dash", label: "1. UNIFIED ACTION DASHBOARD", value: "Action Dashboard", subtext: "Personalized overview of assigned tasks, pending approvals, upcoming deadlines, and key role-specific metrics.", trend: "up", trendValue: "Role-Specific" },
       { id: "wrk-ess", label: "2. SELF-SERVICE HR & ATTENDANCE", value: "Self-Service HR", subtext: "Clock-in/out, leave requests, timesheet tracking, payroll slips, and expense claim submissions.", trend: "up", trendValue: "Attendance & ESS" },
       { id: "wrk-comms", label: "3. COLLABORATION & INTERNAL COMMS", value: "Collaboration Hub", subtext: "Integrated company announcements, cross-department notifications, direct mentions, and team message feeds.", trend: "up", trendValue: "Company Feeds" },
-      { id: "wrk-approval", label: "4. WORKFLOW & APPROVAL HUB", value: "Approval Inbox", subtext: "One-click approval inbox for purchase requests, invoices, discount authorizations, and workflow delegations.", trend: "up", trendValue: "1-Click Approvals" }
+      { id: "wrk-approval", label: "4. WORKFLOW & APPROVAL HUB", value: "Approval Inbox", subtext: "One-click approval inbox for purchase requests, invoices, discount authorizations, and workflow delegations.", trend: "up", trendValue: "1-Click Approvals" },
+      { id: "wrk-quick", label: "5. CUSTOM SHORTCUTS & QUICK ACTIONS", value: "Custom Shortcuts", subtext: "Personalized navigation bar with custom quick-action buttons to launch common tasks instantly.", trend: "up", trendValue: "Quick Actions" }
     ],
 
     features: [

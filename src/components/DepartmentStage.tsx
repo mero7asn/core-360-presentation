@@ -340,19 +340,22 @@ export function DepartmentStage({
                   {/* Card 2: Colorful KPI Sticky Notes */}
                   <div className="grid grid-cols-2 gap-3.5">
                     {department.kpis.map((kpi, idx) => {
+                      const isFifthInFive = department.kpis.length === 5 && idx === 4;
                       const noteBg = idx === 0 
                         ? 'bg-[#cffafe] text-slate-950 rotate-1' 
                         : idx === 1 
                         ? 'bg-[#dcfce7] text-slate-950 -rotate-1' 
                         : idx === 2 
                         ? 'bg-[#fce7f3] text-slate-950 rotate-1.5' 
-                        : 'bg-[#ffedd5] text-slate-950 -rotate-1';
-                      const pinColor = idx === 0 ? 'bg-cyan-600' : idx === 1 ? 'bg-emerald-600' : idx === 2 ? 'bg-pink-600' : 'bg-amber-600';
+                        : idx === 3
+                        ? 'bg-[#ffedd5] text-slate-950 -rotate-1'
+                        : 'bg-[#ede9fe] text-slate-950 rotate-0.5';
+                      const pinColor = idx === 0 ? 'bg-cyan-600' : idx === 1 ? 'bg-emerald-600' : idx === 2 ? 'bg-pink-600' : idx === 3 ? 'bg-amber-600' : 'bg-purple-600';
 
                       return (
                         <div
                           key={kpi.id}
-                          className={`sticky-note relative p-4 rounded-2xl ${noteBg}`}
+                          className={`sticky-note relative p-4 rounded-2xl ${noteBg} ${isFifthInFive ? 'col-span-2' : ''}`}
                         >
                           <div className={`absolute -top-2.5 right-4 w-5 h-5 rounded-full ${pinColor} border-2 border-white pushpin-shadow flex items-center justify-center text-white`}>
                             <Pin className="w-2.5 h-2.5" />
