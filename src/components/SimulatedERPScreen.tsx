@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { PRESENTATION_DATA_MODE, type DepartmentConfig, type ScreenshotView } from '../config/presentation.config';
 import {
-  ArrowUpRight,
   CheckCircle2,
   Globe,
   Activity,
