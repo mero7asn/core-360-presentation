@@ -383,13 +383,13 @@ export interface FloorConfig {
 export const FLOORS_CONFIG: FloorConfig[] = [
   {
     floorNumber: 1,
-    name: "Floor 1: Commercial & CRM",
-    subtitle: "Lead Pipelines, Meeting Bookings & Digital Contracts",
+    name: "Floor 1: CRM & Sales Management",
+    subtitle: "CRM Module · Sales & Customer Management",
     altitude: 0,
     theme: "amber",
     departmentId: "crm",
-    tag: "COMMERCIAL",
-    description: "Modern sales trading floor accelerating customer acquisition, deal lifecycles, and automated quote handshakes."
+    tag: "COMMERCIAL & SALES",
+    description: "Manage leads, customers, sales stages, and offers in one place."
   },
   {
     floorNumber: 2,
@@ -447,7 +447,7 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
   // 🏢 FLOOR 1: Commercial, CRM & Sales Pipeline
   {
     id: "crm",
-    name: "Commercial, CRM & Sales Pipeline",
+    name: "CRM Module · Sales & Customer Management",
     code: "CRM-01",
     floor: 1,
     roomNumber: "101",
@@ -460,120 +460,123 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
     realisticRoomImage: "/office_sales_room_1787220483194.jpg",
 
     hero: {
-      badge: "Commercial Revenue Pipeline",
-      title: "Commercial, CRM & Sales Pipeline",
-      subtitle: "Accelerating revenue cycles from lead qualification and meeting bookings to automated proposal issuance and digital contract signing.",
-      overview: "Core 360 Commercial CRM delivers a high-velocity sales engine with Kanban deal visualization, calendar appointment scheduling, and automated margin-guarded quotation handshakes.",
-      statHeadline: "Total Pipeline Value",
-      statValue: "$482,500",
-      statChange: "+28.4% Conversion Rate"
+      badge: "My Role: CRM Frontend + Backend",
+      title: "CORE 360 · CRM MODULE · SALES & CUSTOMER MANAGEMENT",
+      subtitle: "Manage leads, customers, sales stages, and offers in one place.",
+      overview: "Manage leads, customers, sales stages, and offers in one place.",
+      statHeadline: "CRM SALES ENGINE",
+      statValue: "CRM Sales Engine",
+      statChange: "My Role: CRM Frontend + Backend"
     },
 
     kpis: [
-      { id: "pipe", label: "Total Pipeline Value", value: "$482,500", subtext: "142 Active enterprise deals", trend: "up", trendValue: "+18.4% MoM" },
-      { id: "conv", label: "Lead Conversion Rate", value: "28.4%", subtext: "Industry benchmark: 19.2%", trend: "up", trendValue: "↑ 4.2% MoM" },
-      { id: "deals", label: "Active Deals in Flight", value: "142 Deals", subtext: "Across 5 Kanban stages", trend: "neutral", trendValue: "142 Active" },
-      { id: "velocity", label: "Avg Cycle Velocity", value: "11.4 Days", subtext: "Lead-to-signed contract", trend: "down", trendValue: "-45% Speed" }
+      { id: "lead-mgmt", label: "1. LEAD MANAGEMENT", value: "Lead Management", subtext: "Create, update, assign and track leads.", trend: "up", trendValue: "Frontend + Backend" },
+      { id: "sales-pipe", label: "2. SALES PIPELINE", value: "Sales Pipeline", subtext: "Manage sales stages using a dash board.", trend: "up", trendValue: "Dashboard View" },
+      { id: "offers", label: "3. OFFERS", value: "Offers", subtext: "Create and manage customer offers.", trend: "up", trendValue: "Quotation Engine" },
+      { id: "workflow", label: "4. SALES WORKFLOW", value: "Sales Workflow", subtext: "Lead → Qualification → Offer → Sale", trend: "up", trendValue: "End-to-End" }
     ],
 
     features: [
       {
         id: "crm-1",
-        title: "Dynamic Lead Pipeline & Kanban",
-        description: "Stage-based opportunity tracking (New, Contacted, Qualified, Proposal, Won/Lost) with drag-and-drop workflow triggers.",
-        icon: "Kanban",
-        metric: "5 Stages",
-        metricLabel: "Kanban Flow",
-        tags: ["Kanban", "Lead Scoring", "Pipeline"]
+        title: "Lead Management",
+        description: "Create, update, assign and track leads.",
+        icon: "Users",
+        metric: "Core",
+        metricLabel: "Module",
+        tags: ["Leads", "Tracking"]
       },
       {
         id: "crm-2",
-        title: "Integrated Booking Engine",
-        description: "Direct client appointment scheduling with automated email reminders, time-slot locking, and meeting notes logging.",
-        icon: "Calendar",
-        metric: "100%",
-        metricLabel: "Calendar Sync",
-        tags: ["Bookings", "Calendar", "Reminders"]
+        title: "Customer Management",
+        description: "Maintain customer directory and client profiles.",
+        icon: "UserCheck",
+        metric: "Core",
+        metricLabel: "Module",
+        tags: ["Customers", "Profiles"]
       },
       {
         id: "crm-3",
-        title: "Digital Contract Lifecycle",
-        description: "Contract creation, value tracking, client signature status verification, and automatic expiration notifications.",
-        icon: "FileCheck",
-        metric: "Instant",
-        metricLabel: "Contract Dispatch",
-        tags: ["E-Sign", "Contracts", "Compliance"]
+        title: "Contact Management",
+        description: "Organize client contacts and communication details.",
+        icon: "Contact",
+        metric: "Core",
+        metricLabel: "Module",
+        tags: ["Contacts", "Directory"]
       },
       {
         id: "crm-4",
-        title: "Cross-Department Order Handoff",
-        description: "Winning a deal immediately triggers employee assignment in HR and generates invoice schedules in Payroll/Finance.",
-        icon: "Zap",
-        metric: "0s Lag",
-        metricLabel: "Cross-Silo Sync",
-        tags: ["ERP Handshake", "Automated Flow", "SSOT"]
+        title: "Sales Pipeline",
+        description: "Manage sales stages using a dashboard.",
+        icon: "Kanban",
+        metric: "Core",
+        metricLabel: "Module",
+        tags: ["Pipeline", "Stages"]
+      },
+      {
+        id: "crm-5",
+        title: "Offers / Quotations",
+        description: "Create and manage customer offers.",
+        icon: "FileText",
+        metric: "Core",
+        metricLabel: "Module",
+        tags: ["Offers", "Quotes"]
+      },
+      {
+        id: "crm-6",
+        title: "Sales Follow-up",
+        description: "Follow up with prospects through structured sales stages.",
+        icon: "Clock",
+        metric: "Core",
+        metricLabel: "Module",
+        tags: ["Follow-up", "Sales"]
       }
     ],
 
     showcase: {
       type: "screenshot",
-      mockTitle: "Core 360 ERP — Commercial & CRM Cockpit",
-      mockSubtitle: "Kanban Lead Board, Booking Scheduler & Active Contract Table",
+      mockTitle: "CRM Leads & Sales Pipeline",
+      mockSubtitle: "Manage leads, customers, sales stages, and offers in one place.",
       primaryScreenshot: "/screenshots/floor1_crm_kanban.png",
       subScreens: [
         {
           id: "crm-screen-1",
-          label: "Kanban Lead Board",
+          label: "CRM Leads & Sales Pipeline",
           filename: "/screenshots/floor1_crm_kanban.png",
-          description: "Visual pipeline with lead scoring, deal values, and stage transitions.",
+          description: "Manage leads, customers, sales stages, and offers in one place.",
           hotspots: [
-            { id: "hs-c1", x: 22, y: 35, title: "Stage Milestone Automation", description: "Automated trigger validates deal requirements before moving to Proposal.", kpi: "$482,500 Total" },
-            { id: "hs-c2", x: 68, y: 40, title: "Deal Probability Matrix", description: "AI predicts conversion likelihood based on client interaction recency.", kpi: "28.4% Win Rate" }
-          ]
-        },
-        {
-          id: "crm-screen-2",
-          label: "Appointment Booking Scheduler",
-          filename: "/screenshots/floor1_crm_bookings.png",
-          description: "Interactive calendar view for client discovery calls and contract negotiations.",
-          hotspots: [
-            { id: "hs-c3", x: 50, y: 30, title: "Smart Slot Allocation", description: "Prevents double-booking and assigns account reps dynamically.", kpi: "100% Calendar Sync" }
-          ]
-        },
-        {
-          id: "crm-screen-3",
-          label: "Digital Contract Manager",
-          filename: "/screenshots/floor1_crm_contracts.png",
-          description: "Legally binding electronic signature audit trail with renewal tracking.",
-          hotspots: [
-            { id: "hs-c4", x: 45, y: 65, title: "Signature Verification", description: "Cryptographically verified digital signatures with timestamp audit.", kpi: "142 Active Deals" }
+            { id: "hs-c1", x: 25, y: 35, title: "Lead Management", description: "Create, update, assign and track leads.", kpi: "Leads" },
+            { id: "hs-c2", x: 75, y: 35, title: "Sales Pipeline & Offers", description: "Manage sales stages and customer offers.", kpi: "Offers" }
           ]
         }
       ],
       quickStats: [
-        { label: "Active Deals", value: "142 Opportunities" },
-        { label: "Pipeline Value", value: "$482,500" },
-        { label: "Win Rate", value: "28.4%" }
+        { label: "Module", value: "CRM Sales Engine" },
+        { label: "Role", value: "Frontend + Backend" },
+        { label: "Workflow", value: "Lead → Sale" }
       ]
     },
 
     liveErp: {
       url: "https://demo.core360-erp.enterprise.internal/crm",
-      moduleName: "Commercial Operations & CRM Suite v4.5",
+      moduleName: "CRM Module · Sales & Customer Management",
       deepLinkRoute: "/crm/leads-pipeline",
       demoRecordId: "DEAL-CORE-2026-88"
     },
 
     presenterNotes: [
-      "Emphasize the automated transition from Lead → Booking → Offer → Signed Contract.",
-      "Show how winning an opportunity automatically notifies HR for staffing and Payroll for billing schedules without manual data entry.",
-      "Highlight the Kanban pipeline with real-time deal stage calculations."
+      "Title: CORE 360 · CRM MODULE · SALES & CUSTOMER MANAGEMENT",
+      "Main description: Manage leads, customers, sales stages, and offers in one place.",
+      "Highlight responsibility: My Role: CRM Frontend + Backend.",
+      "Explain the 4 feature cards: 1. Lead Management, 2. Sales Pipeline, 3. Offers, 4. Sales Workflow (Lead → Qualification → Offer → Sale)."
     ],
 
     talkingPoints: [
-      "Dynamic Kanban pipeline with automated milestone qualification.",
-      "Integrated appointment booking system synchronized with client calendars.",
-      "End-to-end digital contract lifecycle with cryptographic signature logging."
+      "My Role: CRM Frontend + Backend.",
+      "1. Lead Management: Create, update, assign and track leads.",
+      "2. Sales Pipeline: Manage sales stages using a dashboard.",
+      "3. Offers: Create and manage customer offers.",
+      "4. Sales Workflow: Lead → Qualification → Offer → Sale."
     ]
   },
 

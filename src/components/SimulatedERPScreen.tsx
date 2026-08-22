@@ -228,23 +228,57 @@ export function SimulatedERPScreen({
 
               {/* Dynamic Simulated Cards based on Department */}
               {department.id === 'crm' && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Total Pipeline Value</div>
-                    <div className="text-2xl font-black text-amber-400 mt-1">$482,500</div>
-                    <div className="text-[10px] text-amber-500 font-medium mt-1 flex items-center gap-1">
-                      <ArrowUpRight className="w-3 h-3" /> 142 Active Deals
+                <div className="space-y-4 mb-4">
+                  {/* 4 Feature Cards */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5">
+                    <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                      <div className="text-[10px] uppercase font-mono font-bold text-amber-400">1. LEAD MANAGEMENT</div>
+                      <div className="text-xs font-bold text-white mt-1">Create & Track Leads</div>
+                      <div className="text-[10px] text-slate-300 mt-0.5">Create, update, assign and track leads.</div>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                      <div className="text-[10px] uppercase font-mono font-bold text-emerald-400">2. SALES PIPELINE</div>
+                      <div className="text-xs font-bold text-white mt-1">Dashboard Stages</div>
+                      <div className="text-[10px] text-slate-300 mt-0.5">Manage sales stages using a dashboard.</div>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                      <div className="text-[10px] uppercase font-mono font-bold text-cyan-400">3. OFFERS</div>
+                      <div className="text-xs font-bold text-white mt-1">Customer Offers</div>
+                      <div className="text-[10px] text-slate-300 mt-0.5">Create and manage customer offers.</div>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                      <div className="text-[10px] uppercase font-mono font-bold text-purple-400">4. SALES WORKFLOW</div>
+                      <div className="text-xs font-bold text-white mt-1">Lead → Sale</div>
+                      <div className="text-[10px] text-slate-300 mt-0.5">Lead → Qualification → Offer → Sale</div>
                     </div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Lead Conversion Rate</div>
-                    <div className="text-2xl font-black text-emerald-400 mt-1">28.4%</div>
-                    <div className="text-[10px] text-emerald-400 mt-1">↑ 4.2% MoM lift</div>
-                  </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Avg Sales Velocity</div>
-                    <div className="text-2xl font-black text-cyan-400 mt-1">11.4 Days</div>
-                    <div className="text-[10px] text-cyan-500 mt-1">Lead-to-signed contract</div>
+
+                  {/* Visual Sales Pipeline Stages */}
+                  <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-mono font-bold text-slate-300">SALES WORKFLOW PIPELINE</span>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 text-amber-400 border border-amber-500/30">
+                        My Role: CRM Frontend + Backend
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-4 gap-2 text-xs">
+                      <div className="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-center">
+                        <div className="font-bold text-amber-400 text-xs">1. Lead</div>
+                        <div className="text-[10px] text-slate-400 mt-0.5">New Prospect</div>
+                      </div>
+                      <div className="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-center">
+                        <div className="font-bold text-cyan-400 text-xs">2. Qualification</div>
+                        <div className="text-[10px] text-slate-400 mt-0.5">Requirements</div>
+                      </div>
+                      <div className="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-center">
+                        <div className="font-bold text-purple-400 text-xs">3. Offer</div>
+                        <div className="text-[10px] text-slate-400 mt-0.5">Quotation Sent</div>
+                      </div>
+                      <div className="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-center">
+                        <div className="font-bold text-emerald-400 text-xs">4. Sale</div>
+                        <div className="text-[10px] text-emerald-400 mt-0.5">Deal Closed</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
