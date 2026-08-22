@@ -18,7 +18,6 @@ export function DoorTransitionOverlay({ department, isOpen, onTransitionComplete
     if (!isOpen) return;
 
     soundFX.playTransition();
-    setStage('approaching');
 
     const t1 = setTimeout(() => {
       setStage('scanning');
@@ -48,6 +47,7 @@ export function DoorTransitionOverlay({ department, isOpen, onTransitionComplete
       clearTimeout(t3);
       clearTimeout(t4);
       clearTimeout(t5);
+      setStage('approaching');
     };
   }, [isOpen, onTransitionComplete]);
 

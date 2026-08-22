@@ -32,14 +32,9 @@ export function ElevatorTransitionModal({
   const [phase, setPhase] = useState<'ascending' | 'arriving' | 'opening'>('ascending');
 
   useEffect(() => {
-    if (!isOpen) {
-      setIsDoorsOpening(false);
-      setPhase('ascending');
-      return;
-    }
+    if (!isOpen) return;
 
     soundFX.playTransition();
-    setPhase('ascending');
 
     const timer1 = setTimeout(() => {
       soundFX.playClick();
@@ -61,6 +56,8 @@ export function ElevatorTransitionModal({
       clearTimeout(timer1);
       clearTimeout(timer2);
       clearTimeout(timer3);
+      setIsDoorsOpening(false);
+      setPhase('ascending');
     };
   }, [isOpen, toFloorNumber, onArrived]);
 

@@ -34,8 +34,8 @@
 ### 📝 Content & Metadata
 * **Project Name:** **Core 360 ERP** (Next-Gen Enterprise Resource Planning System)
 * **Track Name:** AI Software Development (9 Months Diploma)
-* **Supervisor:** *[To be added: Eng. Supervisor Name]*
-* **Track Head:** *[To be added: Eng. Track Head Name]*
+* **Supervisor:** Eng. Ezz Aldin Mohamed
+* **Track Head:** Dr. Reham
 * **Presented By:**
   1. **Omar Hassan Mahmoud** — *Full Stack Developer & Team Leader*
   2. **Mohamed Saeed** — *Full Stack Developer & Integration Manager*
@@ -268,7 +268,7 @@ Please enhance the presentation web application located in "cap presentatin" bas
    - Modern 3D glass building door.
    - Title: Core 360 ERP.
    - Subtitle: AI Software Development (9 months Diploma).
-   - Supervisor: [To be added later], Track Head: [To be added later].
+   - Supervisor: Eng. Ezz Aldin Mohamed, Track Head: Dr. Reham.
    - Presented by:
      1- Omar Hassan Mahmoud (Full Stack Developer and Team Leader)
      2- Mohamed Saeed (Full Stack Developer and Integration Manager)

@@ -24,13 +24,13 @@ export function LiveERPModal({ department, isOpen, onClose }: LiveERPModalProps)
   useEffect(() => {
     if (!isOpen) return;
 
-    setConnectingState('handshake');
     const t1 = setTimeout(() => setConnectingState('session'), 600);
     const t2 = setTimeout(() => setConnectingState('live'), 1200);
 
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
+      setConnectingState('handshake');
     };
   }, [isOpen]);
 

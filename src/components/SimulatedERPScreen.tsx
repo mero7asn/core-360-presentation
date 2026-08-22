@@ -7,7 +7,9 @@ import {
   Layers,
   Image as ImageIcon,
   LayoutGrid,
-  Info
+  Info,
+  Maximize2,
+  X
 } from 'lucide-react';
 
 interface SimulatedERPScreenProps {
@@ -23,6 +25,7 @@ export function SimulatedERPScreen({
 }: SimulatedERPScreenProps) {
   const [selectedSubScreenIndex, setSelectedSubScreenIndex] = useState(0);
   const [imageExists, setImageExists] = useState<boolean>(false);
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
 
   const subScreens = department.showcase.subScreens || [];
   const currentSubScreen: ScreenshotView = subScreens[selectedSubScreenIndex] || {
@@ -105,6 +108,16 @@ export function SimulatedERPScreen({
         </div>
 
         <div className="flex items-center gap-3">
+          {imageExists && (
+            <button
+              onClick={() => setIsLightboxOpen(true)}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold bg-cyan-950/80 text-cyan-300 hover:bg-cyan-900 border border-cyan-500/40 transition-colors cursor-pointer"
+              title="Open full resolution screenshot modal"
+            >
+              <Maximize2 className="w-3.5 h-3.5 text-cyan-400" />
+              <span className="hidden sm:inline">Zoom Screenshot</span>
+            </button>
+          )}
           <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-950/80 text-emerald-400 border border-emerald-500/30">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
             {PRESENTATION_DATA_MODE === 'live' ? 'LIVE ERP DATA' : 'DEMO DATA'}
@@ -477,6 +490,50 @@ export function SimulatedERPScreen({
           </div>
         )}
       </div>
+
+      {/* Full Resolution Screenshot Lightbox Modal */}
+      {isLightboxOpen && imageExists && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/95 backdrop-blur-xl animate-in fade-in duration-200">
+          <div className="relative w-full max-w-7xl max-h-[92vh] flex flex-col bg-slate-900 border border-slate-700 rounded-3xl overflow-hidden shadow-2xl">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between px-6 py-4 bg-slate-950/90 border-b border-slate-800">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse" />
+                <span className="text-sm font-bold text-white tracking-wide">
+                  {currentSubScreen.label} · High-Resolution Inspector
+                </span>
+              </div>
+              <button
+                onClick={() => setIsLightboxOpen(false)}
+                className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                title="Close lightbox"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Image Body */}
+            <div className="flex-1 overflow-auto p-4 sm:p-6 flex items-center justify-center bg-slate-950">
+              <img
+                src={currentSubScreen.filename}
+                alt={currentSubScreen.label}
+                className="w-auto max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl border border-slate-800"
+              />
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-3 bg-slate-950/90 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400 font-mono">
+              <span>{department.name} · Floor 0{department.floor}</span>
+              <button
+                onClick={() => setIsLightboxOpen(false)}
+                className="px-4 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold transition-colors cursor-pointer"
+              >
+                Close Preview
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

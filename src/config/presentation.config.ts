@@ -124,8 +124,8 @@ export const PROJECT_METADATA: ProjectMetadata = {
   projectTagline: "Next-Gen Enterprise Resource Planning System",
   trackName: "AI Software Development",
   diplomaDuration: "9 Months Diploma",
-  supervisor: "Eng. Supervisor Name",
-  trackHead: "Eng. Track Head Name",
+  supervisor: "Eng. Ezz Aldin Mohamed",
+  trackHead: "Dr. Reham",
   team: [
     {
       id: "omar",
@@ -537,12 +537,12 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       type: "screenshot",
       mockTitle: "CRM Leads & Sales Pipeline",
       mockSubtitle: "Manage leads, customers, sales stages, and offers in one place.",
-      primaryScreenshot: "/screenshots/floor1_crm_kanban.png",
+      primaryScreenshot: "/screenshots/1st floor.png",
       subScreens: [
         {
           id: "crm-screen-1",
           label: "CRM Leads & Sales Pipeline",
-          filename: "/screenshots/floor1_crm_kanban.png",
+          filename: "/screenshots/1st floor.png",
           description: "Manage leads, customers, sales stages, and offers in one place.",
           hotspots: [
             { id: "hs-c1", x: 25, y: 35, title: "Lead Management", description: "Create, update, assign and track leads.", kpi: "Leads" },
@@ -655,34 +655,16 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       type: "screenshot",
       mockTitle: "Core 360 ERP — People Operations Hub",
       mockSubtitle: "Employee Directory, Auxiliary Tracking Log & Leave Management View",
-      primaryScreenshot: "/screenshots/floor2_hrm_directory.png",
+      primaryScreenshot: "/screenshots/2nd floor.png",
       subScreens: [
         {
           id: "hrm-screen-1",
-          label: "Employee Directory & Profiles",
-          filename: "/screenshots/floor2_hrm_directory.png",
-          description: "Full staff roster with department filters, job titles, and status tags.",
+          label: "Employee Directory & Operations",
+          filename: "/screenshots/2nd floor.png",
+          description: "Full staff roster, auxiliary logs, and leave management.",
           hotspots: [
             { id: "hs-h1", x: 25, y: 32, title: "Live Staff Status", description: "Tracks active, remote, and on-leave team members instantaneously.", kpi: "84 Employees" },
             { id: "hs-h2", x: 75, y: 35, title: "Bank & Tax Guardrails", description: "Validates IBAN accounts before allowing payroll authorization.", kpi: "Verified Data" }
-          ]
-        },
-        {
-          id: "hrm-screen-2",
-          label: "Aux Tracking & Shift Logs",
-          filename: "/screenshots/floor2_hrm_aux_logs.png",
-          description: "Real-time shift activity timeline and break logging telemetry.",
-          hotspots: [
-            { id: "hs-h3", x: 50, y: 40, title: "Aux Log Timeline", description: "Records work shifts, break durations, and schedule modifications.", kpi: "99.4% Adherence" }
-          ]
-        },
-        {
-          id: "hrm-screen-3",
-          label: "Leave Request Center",
-          filename: "/screenshots/floor2_hrm_leaves.png",
-          description: "Manager approval queue with automatic entitlement deductions.",
-          hotspots: [
-            { id: "hs-h4", x: 40, y: 60, title: "Automated Balance Check", description: "Prevents negative leave balances by checking policy constraints.", kpi: "98.1% Clearance" }
           ]
         }
       ],
@@ -797,12 +779,12 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       type: "screenshot",
       mockTitle: "Accounting Core & Financial Ledger",
       mockSubtitle: "Comprehensive financial management and real-time ledger intelligence.",
-      primaryScreenshot: "/screenshots/floor3_payroll_runs.png",
+      primaryScreenshot: "/screenshots/3rd floor.png",
       subScreens: [
         {
           id: "acc-screen-1",
           label: "Accounting Core & Financial Ledger",
-          filename: "/screenshots/floor3_payroll_runs.png",
+          filename: "/screenshots/3rd floor.png",
           description: "Comprehensive financial management and real-time ledger intelligence.",
           hotspots: [
             { id: "hs-a1", x: 28, y: 35, title: "General Ledger", description: "Automated double-entry bookkeeping and real-time balance sheets.", kpi: "General Ledger" },
@@ -924,12 +906,12 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       type: "screenshot",
       mockTitle: "Inventory Core & Stock Management",
       mockSubtitle: "Real-time stock visibility, asset tracking, and multi-warehouse control.",
-      primaryScreenshot: "/screenshots/floor4_support_tickets.png",
+      primaryScreenshot: "/screenshots/4th floor.png",
       subScreens: [
         {
           id: "inv-screen-1",
           label: "Inventory Core & Stock Management",
-          filename: "/screenshots/floor4_support_tickets.png",
+          filename: "/screenshots/4th floor.png",
           description: "Real-time stock visibility, asset tracking, and multi-warehouse control.",
           hotspots: [
             { id: "hs-i1", x: 24, y: 35, title: "Multi-Warehouse Map", description: "Real-time stock level monitoring across facilities.", kpi: "Multi-Warehouse" },
@@ -1051,12 +1033,12 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       type: "screenshot",
       mockTitle: "Supply Chain Core & Procurement Hub",
       mockSubtitle: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
-      primaryScreenshot: "/screenshots/floor5_marketing_offers.png",
+      primaryScreenshot: "/screenshots/5th floor.png",
       subScreens: [
         {
           id: "scm-screen-1",
           label: "Supply Chain Core & Procurement Hub",
-          filename: "/screenshots/floor5_marketing_offers.png",
+          filename: "/screenshots/5th floor.png",
           description: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
           hotspots: [
             { id: "hs-sc1", x: 26, y: 32, title: "Purchase Order Matrix", description: "Automated RFQs and multi-tier approval chains.", kpi: "PO Automation" },
@@ -1178,12 +1160,12 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
       type: "screenshot",
       mockTitle: "My Workspace Core & Productivity Dashboard",
       mockSubtitle: "Personalized employee dashboard, daily productivity suite, and task control center.",
-      primaryScreenshot: "/screenshots/floor6_executive_bi.png",
+      primaryScreenshot: "/screenshots/6th floor.png",
       subScreens: [
         {
           id: "wrk-screen-1",
           label: "My Workspace Core & Productivity Dashboard",
-          filename: "/screenshots/floor6_executive_bi.png",
+          filename: "/screenshots/6th floor.png",
           description: "Personalized employee dashboard, daily productivity suite, and task control center.",
           hotspots: [
             { id: "hs-w1", x: 25, y: 32, title: "Personal Task & Metric Overview", description: "Real-time task assignments and deadline notifications.", kpi: "Action Center" },
