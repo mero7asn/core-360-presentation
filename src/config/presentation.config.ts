@@ -317,8 +317,11 @@ export const DOSSIER_FILES: DossierFile[] = [
  • CRM & Sales Pipeline                    • Nodemailer / SMTP
  • HRM, Aux Schedules, ESS                 • Payment Gateways (Stripe/Paymob)
  • Payroll & Fiscal Engine                 • PDF & Excel Generation
- • Ticketing & SLA Engine                  • Webhooks & Event Listeners
- • Offer & Template Engine                           │
+ • Inventory Core                          • Webhooks & Event Listeners
+ • Supply Chain Core                                 │
+ • Accounting Core                                   │
+ • Management Core                                   │
+ • My Workspace                                      │
  │                                                   │
  └─────────────────────────┬─────────────────────────┘
                            ▼

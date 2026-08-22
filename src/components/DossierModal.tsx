@@ -79,9 +79,6 @@ export function DossierModal({
                 <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-950/80 text-amber-400 border border-amber-500/40">
                   📁 {currentFile.id === 'intro' ? 'SECTION 01 · ERP OVERVIEW' : `DOSSIER #${currentFile.fileNumber} · ${currentFile.badge}`}
                 </span>
-                {currentFile.id !== 'intro' && (
-                  <span className="text-xs font-mono text-slate-400">CORE 360 ERP SPECIFICATION</span>
-                )}
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
                 {currentFile.title}
