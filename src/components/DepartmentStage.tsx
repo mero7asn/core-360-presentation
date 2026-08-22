@@ -322,7 +322,7 @@ export function DepartmentStage({
                       <Pin className="w-3 h-3" />
                     </div>
                     <div className="text-[10px] uppercase font-mono font-black text-amber-900 tracking-wider mb-1">
-                      📌 {department.hero.statHeadline}
+                      {department.id === 'crm' ? '📌 CRM SALES ENGINE' : '📌 Executive Memo'}
                     </div>
                     <h3 className="text-xl font-black text-slate-950 mb-1.5">
                       {department.id === 'crm' ? department.hero.statHeadline : `${department.hero.statHeadline}: ${department.hero.statValue}`}
