@@ -304,7 +304,7 @@ export function DepartmentStage({
                     <Pin className="w-3 h-3" />
                   </div>
                   <span className="text-xs font-mono font-black text-amber-300 uppercase tracking-widest">
-                    {department.id === 'crm' ? 'CORE 360 · CRM MODULE · SALES & CUSTOMER MANAGEMENT' : `OFFICE WALL PINBOARD · FLOOR 0${department.floor} · ${department.name}`}
+                    {department.hero.title || `OFFICE WALL PINBOARD · FLOOR 0${department.floor} · ${department.name}`}
                   </span>
                 </div>
                 <span className="text-[11px] font-mono text-amber-300/80 hidden sm:block">
@@ -322,10 +322,10 @@ export function DepartmentStage({
                       <Pin className="w-3 h-3" />
                     </div>
                     <div className="text-[10px] uppercase font-mono font-black text-amber-900 tracking-wider mb-1">
-                      {department.id === 'crm' ? '📌 CRM SALES ENGINE' : '📌 Executive Memo'}
+                      📌 {department.hero.statHeadline}
                     </div>
                     <h3 className="text-xl font-black text-slate-950 mb-1.5">
-                      {department.id === 'crm' ? department.hero.statHeadline : `${department.hero.statHeadline}: ${department.hero.statValue}`}
+                      {department.hero.statHeadline}
                     </h3>
                     <p className="text-xs font-semibold text-slate-800 leading-relaxed">
                       "{department.hero.overview}"
@@ -377,7 +377,7 @@ export function DepartmentStage({
                       <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-amber-400" />
                         <span className="text-xs font-bold uppercase tracking-wider text-amber-400">
-                          {department.id === 'crm' ? 'CRM CORE FEATURES' : 'Core Department Modules'}
+                          {`${department.name.toUpperCase()} FEATURES`}
                         </span>
                       </div>
                       <span className="text-[10px] font-mono text-slate-400">
@@ -418,7 +418,7 @@ export function DepartmentStage({
 
                     {/* Frame Header */}
                     <div className="flex items-center justify-between px-2 pt-2 pb-2 text-xs font-black text-slate-800">
-                      <span>📸 {department.id === 'crm' ? 'CRM Leads & Sales Pipeline' : 'System Screenshot Snapshot'}</span>
+                      <span>📸 {department.showcase?.mockTitle || `${department.name} Live View`}</span>
                       <Maximize2 className="w-4 h-4 text-amber-600 group-hover:scale-125 transition-transform" />
                     </div>
 
@@ -432,14 +432,14 @@ export function DepartmentStage({
                     </div>
 
                     <div className="p-2.5 text-center text-[11px] font-mono text-slate-700 font-bold">
-                      {department.id === 'crm' ? 'CRM Leads & Sales Pipeline' : '🔍 Click anywhere on this frame to expand full screenshot & hotspots'}
+                      {department.showcase?.mockTitle || '🔍 Click anywhere on this frame to expand full screenshot & hotspots'}
                     </div>
                   </div>
 
                   {/* Briefing Highlights Card */}
                   <div className="p-4 rounded-2xl bg-slate-900/95 border border-slate-800 mt-4 shadow-xl">
                     <div className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">
-                      {department.id === 'crm' ? 'CRM Project Summary' : 'Executive Talking Points'}
+                      {`${department.name} Summary`}
                     </div>
                     <div className="space-y-2 text-xs text-slate-300">
                       {department.talkingPoints.map((tp, i) => (

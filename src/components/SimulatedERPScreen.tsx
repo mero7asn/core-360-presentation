@@ -303,86 +303,101 @@ export function SimulatedERPScreen({
               )}
 
               {department.id === 'payroll' && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Monthly Payroll Disbursed</div>
-                    <div className="text-2xl font-black text-emerald-400 mt-1">$189,400</div>
-                    <div className="text-[10px] text-emerald-400 mt-1">84 Staff Settled</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 mb-4">
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-emerald-400">1. GENERAL LEDGER</div>
+                    <div className="text-xs font-bold text-white mt-1">Multi-Currency</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Automated double-entry bookkeeping & real-time P&L.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Calculated Loan Balances</div>
-                    <div className="text-2xl font-black text-slate-200 mt-1">$24,800</div>
-                    <div className="text-[10px] text-slate-400 mt-1">Automated installment deduct</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-cyan-400">2. AR & AP</div>
+                    <div className="text-xs font-bold text-white mt-1">Invoice & Bills</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Automated payment reminders and reconciliation.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Audit Calculation Variance</div>
-                    <div className="text-2xl font-black text-cyan-400 mt-1">0.00% Zero</div>
-                    <div className="text-[10px] text-cyan-400 mt-1">0 Discrepancy flags</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-amber-400">3. TAX & COMPLIANCE</div>
+                    <div className="text-xs font-bold text-white mt-1">VAT & Tax Rules</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Exportable audit-ready financial reports.</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-purple-400">4. CASH FLOW</div>
+                    <div className="text-xs font-bold text-white mt-1">Expense Tracking</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Dynamic cash flow forecasting dashboards.</div>
                   </div>
                 </div>
               )}
 
               {department.id === 'support' && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Avg First Response</div>
-                    <div className="text-2xl font-black text-cyan-400 mt-1">12.4 Mins</div>
-                    <div className="text-[10px] text-cyan-500 mt-1">Target: &lt; 15 mins</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 mb-4">
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-cyan-400">1. MULTI-WAREHOUSE</div>
+                    <div className="text-xs font-bold text-white mt-1">Location Control</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Centralized stock levels across multiple facilities.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">SLA Compliance Rate</div>
-                    <div className="text-2xl font-black text-emerald-400 mt-1">96.8%</div>
-                    <div className="text-[10px] text-slate-400 mt-1">Live countdown enforcement</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-emerald-400">2. SKU & EXPIRY</div>
+                    <div className="text-xs font-bold text-white mt-1">Batch Tracking</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Serial numbers, barcodes, and automated expiry alerts.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Customer CSAT</div>
-                    <div className="text-2xl font-black text-amber-400 mt-1">4.85 / 5.0</div>
-                    <div className="text-[10px] text-amber-400 mt-1">340 Client ratings</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-amber-400">3. STOCK ALERTS</div>
+                    <div className="text-xs font-bold text-white mt-1">Dynamic Reorder</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Low-stock notifications & auto purchase triggers.</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-purple-400">4. VALUATION</div>
+                    <div className="text-xs font-bold text-white mt-1">FIFO / LIFO</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Standard costing methods integrated with GL.</div>
                   </div>
                 </div>
               )}
 
               {department.id === 'marketing' && (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Offer Turnaround Time</div>
-                    <div className="text-2xl font-black text-rose-400 mt-1">&lt; 5 Mins</div>
-                    <div className="text-[10px] text-rose-400 mt-1">Down from 2 days</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 mb-4">
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-rose-400">1. PROCUREMENT</div>
+                    <div className="text-xs font-bold text-white mt-1">RFQ & PO Workflow</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Vendor comparison matrices and multi-tier approvals.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Proposal Acceptance Rate</div>
-                    <div className="text-2xl font-black text-emerald-400 mt-1">64.5%</div>
-                    <div className="text-[10px] text-emerald-400 mt-1">+18.2% Lift</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-emerald-400">2. SUPPLIER HUB</div>
+                    <div className="text-xs font-bold text-white mt-1">Scorecards</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">On-time delivery, quality ratings & pricing history.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Campaign ROI</div>
-                    <div className="text-2xl font-black text-amber-400 mt-1">340%</div>
-                    <div className="text-[10px] text-amber-400 mt-1">Attributed CRM revenue</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-amber-400">3. QC & GRN</div>
+                    <div className="text-xs font-bold text-white mt-1">Goods Receipt</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Digital GRN logging with pass/fail QC inspection.</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-cyan-400">4. DEMAND PLAN</div>
+                    <div className="text-xs font-bold text-white mt-1">Replenishment</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Lead-time analytics & predictive demand planning.</div>
                   </div>
                 </div>
               )}
 
               {department.id === 'executive' && (
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-4">
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Monthly Recurring (MRR)</div>
-                    <div className="text-xl font-black text-amber-400 mt-1">$312,000</div>
-                    <div className="text-[10px] text-emerald-400 mt-1">+7.6% Above Target</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 mb-4">
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-amber-400">1. ACTION DASHBOARD</div>
+                    <div className="text-xs font-bold text-white mt-1">Assigned Tasks</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Pending approvals, deadlines & role-specific metrics.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">System Availability</div>
-                    <div className="text-xl font-black text-emerald-400 mt-1">99.98%</div>
-                    <div className="text-[10px] text-emerald-400 mt-1">0 Critical outages</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-emerald-400">2. SELF-SERVICE HR</div>
+                    <div className="text-xs font-bold text-white mt-1">Clock-In & Leaves</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Timesheet tracking, payroll slips & expense claims.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Payment Gateways</div>
-                    <div className="text-xl font-black text-cyan-400 mt-1">3 Active</div>
-                    <div className="text-[10px] text-cyan-400 mt-1">Stripe, PayPal, Paymob</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-cyan-400">3. COLLABORATION</div>
+                    <div className="text-xs font-bold text-white mt-1">Internal Comms</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">Announcements, cross-department notifications & feeds.</div>
                   </div>
-                  <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                    <div className="text-xs text-slate-400">Security Policies</div>
-                    <div className="text-xl font-black text-purple-400 mt-1">100% Audited</div>
-                    <div className="text-[10px] text-purple-400 mt-1">RBAC + JWT Enforced</div>
+                  <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div className="text-[10px] uppercase font-mono font-bold text-purple-400">4. APPROVAL HUB</div>
+                    <div className="text-xs font-bold text-white mt-1">1-Click Approvals</div>
+                    <div className="text-[10px] text-slate-300 mt-0.5">One-click approval for POs, invoices & authorizations.</div>
                   </div>
                 </div>
               )}

@@ -403,43 +403,43 @@ export const FLOORS_CONFIG: FloorConfig[] = [
   },
   {
     floorNumber: 3,
-    name: "Floor 3: Payroll & Fiscal Engine",
-    subtitle: "Automated Runs, Loan Installments & Bank Discrepancy Alerts",
+    name: "Floor 3: Accounting Core",
+    subtitle: "Accounting Core · Financial Management & Ledgers",
     altitude: 9.0,
     theme: "emerald",
     departmentId: "payroll",
-    tag: "TREASURY & FISCAL",
-    description: "High-security treasury suite executing one-click payroll runs, banking IBAN exports, and anomaly detection."
+    tag: "FINANCE & ACCOUNTING",
+    description: "Comprehensive financial management and real-time ledger intelligence."
   },
   {
     floorNumber: 4,
-    name: "Floor 4: Customer Support & SLA",
-    subtitle: "Omnichannel Helpdesk, SLA Timers & Email Threading",
+    name: "Floor 4: Inventory Core",
+    subtitle: "Inventory Core · Stock Visibility & Asset Tracking",
     altitude: 13.5,
     theme: "cyan",
     departmentId: "support",
-    tag: "24/7 OPERATIONS",
-    description: "Collaborative operations center managing ticket queues, two-way customer email sync, and automated SLA countdowns."
+    tag: "INVENTORY & ASSETS",
+    description: "Real-time stock visibility, asset tracking, and multi-warehouse control."
   },
   {
     floorNumber: 5,
-    name: "Floor 5: Marketing & Smart Offers",
-    subtitle: "Dynamic Proposal Builder, Template Versioning & Campaigns",
+    name: "Floor 5: Supply Chain Core",
+    subtitle: "Supply Chain Core · Procurement & Fulfillment",
     altitude: 18.0,
     theme: "rose",
     departmentId: "marketing",
-    tag: "CREATIVE & OFFERS",
-    description: "Creative studio and growth hub maintaining proposal templates with revision history and promotional campaigns."
+    tag: "PROCUREMENT & SUPPLY",
+    description: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle."
   },
   {
     floorNumber: 6,
-    name: "Floor 6: Executive Command Center",
-    subtitle: "Unified BI Telemetry, Payment Gateways & RBAC Security",
+    name: "Floor 6: My Workspace Core",
+    subtitle: "My Workspace Core · Employee Productivity & Tasks",
     altitude: 22.5,
     theme: "gold",
     departmentId: "executive",
-    tag: "BOARDROOM & SECURITY",
-    description: "Penthouse command boardroom synthesizing cross-department analytics, payment gateways, and system audit logs."
+    tag: "WORKSPACE & PRODUCTIVITY",
+    description: "Personalized employee dashboard, daily productivity suite, and task control center."
   }
 ];
 
@@ -712,279 +712,266 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
     ]
   },
 
-  // 🏢 FLOOR 3: Payroll, Compensation & Fiscal Engine
+  // 🏢 FLOOR 3: Accounting Core
   {
     id: "payroll",
-    name: "Payroll, Compensation & Fiscal Engine",
-    code: "PAY-03",
+    name: "Accounting Core",
+    code: "ACC-03",
     floor: 3,
     roomNumber: "303",
-    icon: "CreditCard",
+    icon: "Calculator",
     accentColor: "#10b981",
-    glowColor: "rgba(168, 85, 129, 0.4)",
+    glowColor: "rgba(16, 185, 129, 0.4)",
     themeGradient: "from-emerald-500/20 to-teal-500/5",
     position3D: [-3.5, 9.0, 1.2],
     doorPosition3D: [-3.5, 9.0, 3.2],
     realisticRoomImage: "/office_finance_room_1787220396138.jpg",
 
     hero: {
-      badge: "Fiscal Engine & Treasury",
-      title: "Payroll, Compensation & Fiscal Engine",
-      subtitle: "One-click automated payroll calculation, loan balance deductions, company bank account management, and proactive discrepancy alerts.",
-      overview: "Core 360 Payroll Engine provides zero-variance compensation execution, calculating gross salaries, tax deductions, loans, and net payouts with complete banking auditability.",
-      statHeadline: "Monthly Disbursed Payroll",
-      statValue: "$189,400",
-      statChange: "100% Zero Variance"
+      badge: "Accounting & Financial Core",
+      title: "CORE 360 · ACCOUNTING CORE · FINANCIAL MANAGEMENT",
+      subtitle: "Comprehensive financial management and real-time ledger intelligence.",
+      overview: "Comprehensive financial management and real-time ledger intelligence.",
+      statHeadline: "ACCOUNTING CORE",
+      statValue: "Financial Management",
+      statChange: "Real-Time Ledger Intelligence"
     },
 
     kpis: [
-      { id: "p_disbursed", label: "Monthly Payroll Disbursed", value: "$189,400", subtext: "84 staff settled on schedule", trend: "up", trendValue: "$189,400 Net" },
-      { id: "p_loans", label: "Calculated Loan Balances", value: "$24,800 Active", subtext: "Automated monthly deductions", trend: "neutral", trendValue: "18 Active Loans" },
-      { id: "p_accuracy", label: "Audit Accuracy", value: "100%", subtext: "Zero calculation variance", trend: "up", trendValue: "0 Anomaly Errors" },
-      { id: "p_accounts", label: "Active Bank Accounts", value: "4 Accounts", subtext: "Multi-currency bank rails", trend: "neutral", trendValue: "4 Connected" }
+      { id: "gl-curr", label: "1. GENERAL LEDGER & MULTI-CURRENCY", value: "General Ledger", subtext: "Automated double-entry bookkeeping with real-time balance sheets, profit & loss statements, and multi-currency support.", trend: "up", trendValue: "Real-Time" },
+      { id: "ar-ap", label: "2. ACCOUNTS RECEIVABLE & PAYABLE (AR/AP)", value: "AR / AP Management", subtext: "Streamlined invoice creation, automated payment reminders, vendor bill tracking, and reconciliation.", trend: "up", trendValue: "Automated" },
+      { id: "tax-comp", label: "3. TAX & COMPLIANCE AUTOMATION", value: "Tax Compliance", subtext: "Automated tax rule calculation (VAT, sales tax, withholding) with exportable audit-ready financial reports.", trend: "up", trendValue: "Audit-Ready" },
+      { id: "cash-flow", label: "4. CASH FLOW & EXPENSE TRACKING", value: "Cash Flow Tracking", subtext: "End-to-end expense logging, petty cash tracking, and dynamic cash flow forecasting dashboards.", trend: "up", trendValue: "Dynamic Forecast" }
     ],
 
     features: [
       {
-        id: "pay-1",
-        title: "One-Click Payroll Runs",
-        description: "Automated calculation of gross pay, overtime, housing allowances, tax deductions, and net payable per employee.",
-        icon: "Calculator",
-        metric: "1-Click",
-        metricLabel: "Automated Run",
-        tags: ["Payroll Run", "Gross-to-Net", "Taxes"]
+        id: "acc-1",
+        title: "General Ledger & Multi-Currency",
+        description: "Automated double-entry bookkeeping with real-time balance sheets, profit & loss statements, and multi-currency support.",
+        icon: "BookOpen",
+        metric: "Core",
+        metricLabel: "Ledger",
+        tags: ["General Ledger", "Multi-Currency", "P&L"]
       },
       {
-        id: "pay-2",
-        title: "Automated Payroll Anomaly Alerts",
-        description: "Proactive alert system detecting negative net pay, missing employee bank IBANs, or abnormal overtime spikes.",
-        icon: "AlertOctagon",
-        metric: "100%",
-        metricLabel: "Anomaly Guard",
-        tags: ["Alert Center", "Validation", "Audit"]
+        id: "acc-2",
+        title: "Accounts Receivable & Payable (AR/AP)",
+        description: "Streamlined invoice creation, automated payment reminders, vendor bill tracking, and reconciliation.",
+        icon: "Receipt",
+        metric: "Core",
+        metricLabel: "Invoicing",
+        tags: ["AR/AP", "Invoices", "Reconciliation"]
       },
       {
-        id: "pay-3",
-        title: "Company Bank Account Matrix",
-        description: "Manage multiple corporate bank accounts, track liquid balances, and export encrypted bank transfer payment sheets.",
+        id: "acc-3",
+        title: "Tax & Compliance Automation",
+        description: "Automated tax rule calculation (VAT, sales tax, withholding) with exportable audit-ready financial reports.",
+        icon: "ShieldCheck",
+        metric: "Core",
+        metricLabel: "Tax",
+        tags: ["Tax Rules", "VAT", "Audit Reports"]
+      },
+      {
+        id: "acc-4",
+        title: "Cash Flow & Expense Tracking",
+        description: "End-to-end expense logging, petty cash tracking, and dynamic cash flow forecasting dashboards.",
+        icon: "TrendingUp",
+        metric: "Core",
+        metricLabel: "Cash Flow",
+        tags: ["Expenses", "Petty Cash", "Forecasting"]
+      },
+      {
+        id: "acc-5",
+        title: "Bank Reconciliation & Audit Trails",
+        description: "Secure transaction matching with bank feeds, granular permission controls, and complete historical audit logs.",
         icon: "Building",
-        metric: "4 Accounts",
-        metricLabel: "Bank Rails",
-        tags: ["Banking", "IBAN Export", "Treasury"]
-      },
-      {
-        id: "pay-4",
-        title: "Employee Loan Management",
-        description: "Track loan requests, active principal balances, installment schedules, and automated monthly salary deductions.",
-        icon: "Coins",
-        metric: "$24,800",
-        metricLabel: "Active Balances",
-        tags: ["Loans", "Installments", "Auto-Deduct"]
+        metric: "Core",
+        metricLabel: "Banking",
+        tags: ["Bank Feeds", "Audit Trail", "Security"]
       }
     ],
 
     showcase: {
       type: "screenshot",
-      mockTitle: "Core 360 ERP — Fiscal Payroll Command",
-      mockSubtitle: "Payroll Run Summary, Anomaly Alert Center & Company Bank Accounts",
+      mockTitle: "Accounting Core & Financial Ledger",
+      mockSubtitle: "Comprehensive financial management and real-time ledger intelligence.",
       primaryScreenshot: "/screenshots/floor3_payroll_runs.png",
       subScreens: [
         {
-          id: "pay-screen-1",
-          label: "Payroll Run Summary",
+          id: "acc-screen-1",
+          label: "Accounting Core & Financial Ledger",
           filename: "/screenshots/floor3_payroll_runs.png",
-          description: "Monthly compensation ledger with gross, deductions, loan offsets, and net disbursements.",
+          description: "Comprehensive financial management and real-time ledger intelligence.",
           hotspots: [
-            { id: "hs-p1", x: 28, y: 35, title: "Gross to Net Engine", description: "Dynamically calculates taxes and insurance in compliance with labor laws.", kpi: "$189,400 Disbursed" },
-            { id: "hs-p2", x: 72, y: 35, title: "Bank File Export", description: "Generates standardized bank transfer files for batch wire execution.", kpi: "Instant Export" }
-          ]
-        },
-        {
-          id: "pay-screen-2",
-          label: "Anomaly Alert Center",
-          filename: "/screenshots/floor3_payroll_alerts.png",
-          description: "Pre-payroll execution validation flags ensuring zero payment discrepancies.",
-          hotspots: [
-            { id: "hs-p3", x: 50, y: 35, title: "Zero Variance Guard", description: "Flags missing bank details or unusual overtime calculations before approval.", kpi: "0 Unresolved Flags" }
-          ]
-        },
-        {
-          id: "pay-screen-3",
-          label: "Company Bank Matrix",
-          filename: "/screenshots/floor3_payroll_banks.png",
-          description: "Treasury dashboard monitoring balances across corporate operational accounts.",
-          hotspots: [
-            { id: "hs-p4", x: 45, y: 60, title: "Liquidity Guardrails", description: "Verifies sufficient account funds before committing payroll disbursement.", kpi: "4 Bank Accounts" }
+            { id: "hs-a1", x: 28, y: 35, title: "General Ledger", description: "Automated double-entry bookkeeping and real-time balance sheets.", kpi: "General Ledger" },
+            { id: "hs-a2", x: 72, y: 35, title: "AR / AP & Reconciliation", description: "Invoice automation and bank transaction matching.", kpi: "Reconciliation" }
           ]
         }
       ],
       quickStats: [
-        { label: "Monthly Disbursal", value: "$189,400" },
-        { label: "Active Loans", value: "$24,800" },
-        { label: "Calculated Variance", value: "$0.00 (Zero)" }
+        { label: "Module", value: "Accounting Core" },
+        { label: "Ledger", value: "Multi-Currency" },
+        { label: "Compliance", value: "Audit-Ready" }
       ]
     },
 
     liveErp: {
-      url: "https://demo.core360-erp.enterprise.internal/payroll",
-      moduleName: "Fiscal & Payroll Processing Suite v4.8",
-      deepLinkRoute: "/payroll/runs-summary",
-      demoRecordId: "PAYROLL-2026-SEP-RUN"
+      url: "https://demo.core360-erp.enterprise.internal/accounting",
+      moduleName: "Accounting Core · Financial Management Suite",
+      deepLinkRoute: "/accounting/general-ledger",
+      demoRecordId: "ACC-CORE-2026-LEDGER"
     },
 
     presenterNotes: [
-      "Demonstrate the one-click payroll run: how gross salaries, tax deductions, and active loan installments are calculated automatically.",
-      "Show the Anomaly Alert Center detecting discrepancies before disbursement to guarantee 100% accuracy.",
-      "Explain the banking integration where payment files are exported directly in standard banking format."
+      "Title: Accounting Core - Comprehensive financial management and real-time ledger intelligence.",
+      "Explain the core capabilities: General Ledger, AR/AP, Tax & Compliance automation, Cash Flow tracking, and Bank Reconciliation.",
+      "Highlight multi-currency support and real-time auditability across all fiscal transactions."
     ],
 
     talkingPoints: [
-      "Zero calculation variance with automated gross-to-net math.",
-      "Integrated employee loan tracking with automatic monthly deduction schedules.",
-      "Proactive discrepancy detection preventing invalid disbursements or missing banking data."
+      "1. General Ledger & Multi-Currency: Automated double-entry bookkeeping and real-time P&L.",
+      "2. Accounts Receivable & Payable (AR/AP): Streamlined invoicing and automated vendor payment reconciliation.",
+      "3. Tax & Compliance Automation: Automated VAT/sales tax rules and audit-ready financial reports.",
+      "4. Cash Flow & Expense Tracking: Dynamic cash flow forecasting and expense management.",
+      "5. Bank Reconciliation & Audit Trails: Secure bank feed matching and immutable logs."
     ]
   },
 
-  // 🏢 FLOOR 4: Customer Support, Ticketing & SLA Operations
+  // 🏢 FLOOR 4: Inventory Core
   {
     id: "support",
-    name: "Customer Support, Ticketing & SLA Operations",
-    code: "SUP-04",
+    name: "Inventory Core",
+    code: "INV-04",
     floor: 4,
     roomNumber: "404",
-    icon: "Headphones",
+    icon: "Boxes",
     accentColor: "#06b6d4",
     glowColor: "rgba(6, 182, 212, 0.4)",
     themeGradient: "from-cyan-500/20 to-blue-500/5",
     position3D: [-3.5, 13.5, 1.2],
     doorPosition3D: [-3.5, 13.5, 3.2],
-    realisticRoomImage: "/office_support_hub.jpg",
+    realisticRoomImage: "/office_inventory_room_1787220542567.jpg",
 
     hero: {
-      badge: "24/7 Omnichannel Helpdesk",
-      title: "Customer Support, Ticketing & SLA Operations",
-      subtitle: "Multi-channel incident resolution, live SLA timer enforcement, priority queue routing, and direct two-way email synchronization.",
-      overview: "Core 360 Support ensures high customer satisfaction and rapid ticket turnaround with intelligent queue assignment, visual escalation warnings, and email threading.",
-      statHeadline: "SLA Compliance Rate",
-      statValue: "96.8%",
-      statChange: "12.4 Min First Response"
+      badge: "Stock & Multi-Warehouse Control",
+      title: "CORE 360 · INVENTORY CORE · REAL-TIME STOCK & ASSET MANAGEMENT",
+      subtitle: "Real-time stock visibility, asset tracking, and multi-warehouse control.",
+      overview: "Real-time stock visibility, asset tracking, and multi-warehouse control.",
+      statHeadline: "INVENTORY CORE",
+      statValue: "Stock & Asset Control",
+      statChange: "Multi-Warehouse Visibility"
     },
 
     kpis: [
-      { id: "s_response", label: "Avg First Response Time", value: "12.4 Mins", subtext: "Target: < 15 mins", trend: "down", trendValue: "-38% Latency" },
-      { id: "s_sla", label: "SLA Compliance Rate", value: "96.8%", subtext: "Automated countdown enforcement", trend: "up", trendValue: "96.8% Met" },
-      { id: "s_csat", label: "Customer Satisfaction", value: "4.85 / 5.0", subtext: "Based on 340 client ratings", trend: "up", trendValue: "+0.35 pts" },
-      { id: "s_open", label: "Active Ticket Queue", value: "18 Tickets", subtext: "Across 4 support tiers", trend: "down", trendValue: "94% Resolved" }
+      { id: "inv-wh", label: "1. MULTI-WAREHOUSE & LOCATION CONTROL", value: "Multi-Warehouse", subtext: "Centralized tracking of stock levels, bin locations, transfers, and transit goods across multiple facilities.", trend: "up", trendValue: "Multi-Facility" },
+      { id: "inv-sku", label: "2. SKU, BATCH & EXPIRY MANAGEMENT", value: "Batch & Expiry", subtext: "Granular tracking by serial numbers, barcodes, batch/lot numbers, and automated expiration date alerts.", trend: "up", trendValue: "Barcode/Lot" },
+      { id: "inv-alerts", label: "3. AUTOMATED STOCK LEVEL ALERTS", value: "Stock Level Alerts", subtext: "Dynamic reorder point calculation, low-stock notifications, and automatic purchase requisition triggers.", trend: "up", trendValue: "Auto Reorder" },
+      { id: "inv-val", label: "4. STOCK VALUATION & COSTING METHODS", value: "Valuation & Costing", subtext: "Support for standard costing methods (FIFO, LIFO, Weighted Average) integrated directly with the General Ledger.", trend: "up", trendValue: "FIFO / LIFO" }
     ],
 
     features: [
       {
-        id: "sup-1",
-        title: "Ticket Queue Management",
-        description: "Filter and triage tickets by severity (Critical, High, Medium, Low), department, assignee, and resolution status.",
-        icon: "Inbox",
-        metric: "18 Open",
-        metricLabel: "Managed Queue",
-        tags: ["Triage", "Severity", "Routing"]
+        id: "inv-1",
+        title: "Multi-Warehouse & Location Control",
+        description: "Centralized tracking of stock levels, bin locations, transfers, and transit goods across multiple facilities.",
+        icon: "Building2",
+        metric: "Core",
+        metricLabel: "Facilities",
+        tags: ["Warehouses", "Bin Locations", "Transfers"]
       },
       {
-        id: "sup-2",
-        title: "Direct Two-Way Email Integration",
-        description: "Customer email replies append directly into active ticket discussion threads with rich-text attachments.",
-        icon: "Mail",
-        metric: "100%",
-        metricLabel: "Email Threading",
-        tags: ["Email Sync", "Threading", "SMTP/IMAP"]
+        id: "inv-2",
+        title: "SKU, Batch & Expiry Management",
+        description: "Granular tracking by serial numbers, barcodes, batch/lot numbers, and automated expiration date alerts.",
+        icon: "QrCode",
+        metric: "Core",
+        metricLabel: "Tracking",
+        tags: ["Serial Numbers", "Barcodes", "Batches", "Expiry"]
       },
       {
-        id: "sup-3",
-        title: "Automated SLA Countdown Timers",
-        description: "Visual color-coded countdown timers flagging approaching breaches and auto-escalating overdue tickets to supervisors.",
-        icon: "Timer",
-        metric: "96.8%",
-        metricLabel: "SLA Met",
-        tags: ["SLA Timers", "Escalation", "Alerts"]
+        id: "inv-3",
+        title: "Automated Stock Level Alerts",
+        description: "Dynamic reorder point calculation, low-stock notifications, and automatic purchase requisition triggers.",
+        icon: "BellRing",
+        metric: "Core",
+        metricLabel: "Alerts",
+        tags: ["Reorder Points", "Low Stock", "Auto-PO"]
       },
       {
-        id: "sup-4",
-        title: "Customer CSAT & Performance Telemetry",
-        description: "Post-resolution satisfaction surveys and agent resolution metrics integrated into team scorecards.",
-        icon: "Star",
-        metric: "4.85 / 5.0",
-        metricLabel: "Client CSAT",
-        tags: ["CSAT", "Telemetry", "Analytics"]
+        id: "inv-4",
+        title: "Stock Valuation & Costing Methods",
+        description: "Support for standard costing methods (FIFO, LIFO, Weighted Average) integrated directly with the General Ledger.",
+        icon: "Coins",
+        metric: "Core",
+        metricLabel: "Valuation",
+        tags: ["FIFO", "LIFO", "Weighted Average", "GL Sync"]
+      },
+      {
+        id: "inv-5",
+        title: "Dead Stock & Cycle Count Analytics",
+        description: "Rapid barcode-assisted cycle counting, discrepancy auditing, and slow-moving/dead-stock identification.",
+        icon: "BarChart3",
+        metric: "Core",
+        metricLabel: "Analytics",
+        tags: ["Cycle Counts", "Audit", "Dead Stock"]
       }
     ],
 
     showcase: {
       type: "screenshot",
-      mockTitle: "Core 360 ERP — Omnichannel Support Center",
-      mockSubtitle: "Active Ticket Queue, SLA Countdown Tracker & Live Discussion Thread",
+      mockTitle: "Inventory Core & Stock Management",
+      mockSubtitle: "Real-time stock visibility, asset tracking, and multi-warehouse control.",
       primaryScreenshot: "/screenshots/floor4_support_tickets.png",
       subScreens: [
         {
-          id: "sup-screen-1",
-          label: "Ticket Queue Dashboard",
+          id: "inv-screen-1",
+          label: "Inventory Core & Stock Management",
           filename: "/screenshots/floor4_support_tickets.png",
-          description: "Real-time incident feed with priority flags, assigned engineers, and status badges.",
+          description: "Real-time stock visibility, asset tracking, and multi-warehouse control.",
           hotspots: [
-            { id: "hs-s1", x: 24, y: 35, title: "Dynamic Priority Triage", description: "Critical production incidents trigger immediate mobile and Slack notifications.", kpi: "18 Active Tickets" },
-            { id: "hs-s2", x: 74, y: 35, title: "Live SLA Timer Guard", description: "Visual timer turns red when response threshold is within 15 minutes.", kpi: "96.8% SLA" }
-          ]
-        },
-        {
-          id: "sup-screen-2",
-          label: "SLA Tracker & Escalations",
-          filename: "/screenshots/floor4_support_sla.png",
-          description: "Department SLA adherence matrix and agent turnaround benchmarks.",
-          hotspots: [
-            { id: "hs-s3", x: 50, y: 35, title: "Escalation Hierarchy", description: "Unresolved tier-1 tickets auto-escalate to Tier-2 engineers after 30 minutes.", kpi: "12.4m Response" }
-          ]
-        },
-        {
-          id: "sup-screen-3",
-          label: "Two-Way Email Thread View",
-          filename: "/screenshots/floor4_support_email.png",
-          description: "Synchronized email conversation view with internal private agent notes.",
-          hotspots: [
-            { id: "hs-s4", x: 45, y: 65, title: "Synchronized Email Thread", description: "Customers respond via standard email; messages appear live in the ticket.", kpi: "4.85 CSAT Score" }
+            { id: "hs-i1", x: 24, y: 35, title: "Multi-Warehouse Map", description: "Real-time stock level monitoring across facilities.", kpi: "Multi-Warehouse" },
+            { id: "hs-i2", x: 74, y: 35, title: "Automated Reorder Engine", description: "Dynamic triggers generate purchase requisitions upon threshold breach.", kpi: "Auto-Reorder" }
           ]
         }
       ],
       quickStats: [
-        { label: "Avg Response", value: "12.4 Mins" },
-        { label: "SLA Adherence", value: "96.8%" },
-        { label: "CSAT Score", value: "4.85 / 5.0" }
+        { label: "Module", value: "Inventory Core" },
+        { label: "Costing", value: "FIFO / LIFO / W.Avg" },
+        { label: "Tracking", value: "Barcode & Batch" }
       ]
     },
 
     liveErp: {
-      url: "https://demo.core360-erp.enterprise.internal/support",
-      moduleName: "Customer Support & SLA Operations Suite v3.8",
-      deepLinkRoute: "/support/ticket-desk",
-      demoRecordId: "TICKET-SUP-2026-104"
+      url: "https://demo.core360-erp.enterprise.internal/inventory",
+      moduleName: "Inventory Core · Multi-Warehouse & Asset Suite",
+      deepLinkRoute: "/inventory/stock-matrix",
+      demoRecordId: "INV-CORE-STOCK-2026"
     },
 
     presenterNotes: [
-      "Highlight how two-way email synchronization ensures customers never have to log into a portal if they prefer communicating via email.",
-      "Showcase the automated SLA countdown timer which prevents forgotten tickets and keeps response times below 15 minutes."
+      "Title: Inventory Core - Real-time stock visibility, asset tracking, and multi-warehouse control.",
+      "Explain the 5 core functions: Multi-Warehouse tracking, SKU/batch/expiry management, automated reorder alerts, standard valuation methods (FIFO/LIFO), and dead stock cycle counting.",
+      "Highlight the integration with General Ledger for automatic asset value reconciliation."
     ],
 
     talkingPoints: [
-      "Omnichannel ticketing with two-way email conversation threads.",
-      "Visual SLA enforcement with automated supervisor escalation rules.",
-      "4.85/5.0 CSAT rating supported by real-time agent performance scorecards."
+      "1. Multi-Warehouse & Location Control: Real-time stock visibility across all physical facilities.",
+      "2. SKU, Batch & Expiry Management: Serial number, barcode, and batch tracking with expiration alerts.",
+      "3. Automated Stock Level Alerts: Dynamic reorder point calculation to eliminate stockouts.",
+      "4. Stock Valuation & Costing Methods: FIFO, LIFO, and Weighted Average costing synced with accounting.",
+      "5. Dead Stock & Cycle Count Analytics: Barcode cycle counting and slow-moving stock identification."
     ]
   },
 
-  // 🏢 FLOOR 5: Marketing Automation & Smart Offer Generation
+  // 🏢 FLOOR 5: Supply Chain Core
   {
     id: "marketing",
-    name: "Marketing Automation & Smart Offer Generation",
-    code: "MKT-05",
+    name: "Supply Chain Core",
+    code: "SCM-05",
     floor: 5,
     roomNumber: "505",
-    icon: "Send",
+    icon: "Truck",
     accentColor: "#f43f5e",
     glowColor: "rgba(244, 63, 94, 0.4)",
     themeGradient: "from-rose-500/20 to-pink-500/5",
@@ -993,131 +980,124 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
     realisticRoomImage: "/office_marketing_studio.jpg",
 
     hero: {
-      badge: "Dynamic Offer Engine",
-      title: "Marketing Automation & Smart Offer Generation",
-      subtitle: "Dynamic proposal building, master template versioning with revision diffs, promotional campaigns, and automated PDF client generation.",
-      overview: "Core 360 Marketing delivers high-conversion proposal generation in under 5 minutes, allowing sales and marketing to build margin-protected client offers with complete version control.",
-      statHeadline: "Offer Turnaround Time",
-      statValue: "< 5 Minutes",
-      statChange: "64.5% Proposal Acceptance"
+      badge: "Procurement & Fulfillment",
+      title: "CORE 360 · SUPPLY CHAIN CORE · PROCUREMENT & FULFILLMENT",
+      subtitle: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
+      overview: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
+      statHeadline: "SUPPLY CHAIN CORE",
+      statValue: "Procurement & Fulfillment",
+      statChange: "Lifecycle Automation"
     },
 
     kpis: [
-      { id: "m_roi", label: "Campaign ROI", value: "340%", subtext: "Attributed pipeline revenue", trend: "up", trendValue: "+42% YoY" },
-      { id: "m_accept", label: "Proposal Acceptance Rate", value: "64.5%", subtext: "Dynamic structured quotes", trend: "up", trendValue: "+18.2% Lift" },
-      { id: "m_speed", label: "Offer Turnaround Time", value: "< 5 Mins", subtext: "Down from 2 business days", trend: "down", trendValue: "-94% Time" },
-      { id: "m_templates", label: "Active Master Templates", value: "24 Templates", subtext: "With full revision diffs", trend: "neutral", trendValue: "v3.4 Latest" }
+      { id: "scm-po", label: "1. PROCUREMENT & PURCHASE ORDER WORKFLOW", value: "Procurement Workflow", subtext: "Automated RFQs (Request for Quotations), PO generation, vendor comparison matrices, and multi-tier approval chains.", trend: "up", trendValue: "Multi-Tier Approvals" },
+      { id: "scm-vendor", label: "2. SUPPLIER & VENDOR RELATIONSHIP HUB", value: "Supplier Hub", subtext: "Centralized supplier directory with scorecards tracking on-time delivery, quality ratings, and pricing history.", trend: "up", trendValue: "Vendor Scorecards" },
+      { id: "scm-qc", label: "3. GOODS RECEIPT & QUALITY INSPECTION (QC)", value: "QC & GRN Logging", subtext: "Digital GRN (Goods Received Note) logging with built-in quality check workflows, pass/fail status, and return-to-vendor (RTV) handling.", trend: "up", trendValue: "Digital GRN & QC" },
+      { id: "scm-demand", label: "4. DEMAND FORECASTING & REPLENISHMENT", value: "Demand Forecasting", subtext: "Lead-time analytics and predictive demand planning to eliminate stockouts and optimize bulk purchasing.", trend: "up", trendValue: "Predictive Planning" }
     ],
 
     features: [
       {
-        id: "mkt-1",
-        title: "Smart Offer Builder",
-        description: "Modular item selection, discount controls, milestone payment schedules, and automated branded PDF export.",
-        icon: "FileText",
-        metric: "< 5 Mins",
-        metricLabel: "Build Time",
-        tags: ["Offer Builder", "PDF Generation", "Pricing"]
+        id: "scm-1",
+        title: "Procurement & Purchase Order Workflow",
+        description: "Automated RFQs (Request for Quotations), PO generation, vendor comparison matrices, and multi-tier approval chains.",
+        icon: "FileCheck2",
+        metric: "Core",
+        metricLabel: "Procurement",
+        tags: ["RFQs", "Purchase Orders", "Approvals"]
       },
       {
-        id: "mkt-2",
-        title: "Template & Versioning Engine",
-        description: "Maintain master offer templates with complete revision history, rollback capabilities, and side-by-side diffs.",
-        icon: "GitBranch",
-        metric: "100%",
-        metricLabel: "Audit History",
-        tags: ["Versioning", "Diffs", "Templates"]
+        id: "scm-2",
+        title: "Supplier & Vendor Relationship Hub",
+        description: "Centralized supplier directory with scorecards tracking on-time delivery, quality ratings, and pricing history.",
+        icon: "Users2",
+        metric: "Core",
+        metricLabel: "Vendors",
+        tags: ["Suppliers", "Scorecards", "Quality"]
       },
       {
-        id: "mkt-3",
-        title: "Omnichannel Campaign Launcher",
-        description: "Target market segmentation, promotional email blasts, conversion link tracking, and campaign ROI analytics.",
-        icon: "Target",
-        metric: "340%",
-        metricLabel: "Campaign ROI",
-        tags: ["Campaigns", "Segmentation", "Analytics"]
+        id: "scm-3",
+        title: "Goods Receipt & Quality Inspection (QC)",
+        description: "Digital GRN (Goods Received Note) logging with built-in quality check workflows, pass/fail status, and return-to-vendor (RTV) handling.",
+        icon: "ShieldAlert",
+        metric: "Core",
+        metricLabel: "Quality",
+        tags: ["GRN", "Quality Checks", "RTV Handling"]
       },
       {
-        id: "mkt-4",
-        title: "Margin Protection Guardrails",
-        description: "Algorithmic profit validation prevents reps from discounting offers below corporate margins without executive sign-off.",
-        icon: "ShieldCheck",
-        metric: "Guardrail",
-        metricLabel: "Margin Safe",
-        tags: ["Profitability", "Discounts", "Governance"]
+        id: "scm-4",
+        title: "Demand Forecasting & Replenishment",
+        description: "Lead-time analytics and predictive demand planning to eliminate stockouts and optimize bulk purchasing.",
+        icon: "TrendingUp",
+        metric: "Core",
+        metricLabel: "Forecasting",
+        tags: ["Lead Times", "Replenishment", "Bulk Planning"]
+      },
+      {
+        id: "scm-5",
+        title: "Logistics & Order Fulfillment",
+        description: "Seamless integration from sales orders to pick-pack-ship stages with automated shipping status updates.",
+        icon: "PackageCheck",
+        metric: "Core",
+        metricLabel: "Logistics",
+        tags: ["Pick-Pack-Ship", "Fulfillment", "Tracking"]
       }
     ],
 
     showcase: {
       type: "screenshot",
-      mockTitle: "Core 360 ERP — Smart Offer & Campaign Suite",
-      mockSubtitle: "Offer Proposal Builder, Template Version Drawer & Campaign Matrix",
+      mockTitle: "Supply Chain Core & Procurement Hub",
+      mockSubtitle: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
       primaryScreenshot: "/screenshots/floor5_marketing_offers.png",
       subScreens: [
         {
-          id: "mkt-screen-1",
-          label: "Offer Proposal Builder",
+          id: "scm-screen-1",
+          label: "Supply Chain Core & Procurement Hub",
           filename: "/screenshots/floor5_marketing_offers.png",
-          description: "Dynamic quote assembly interface with item breakdown and one-click PDF generation.",
+          description: "End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
           hotspots: [
-            { id: "hs-m1", x: 26, y: 32, title: "Modular Pricing Engine", description: "Select products/services with live discount and tax calculation.", kpi: "< 5m Turnaround" },
-            { id: "hs-m2", x: 74, y: 32, title: "One-Click PDF Export", description: "Produces client-ready branded PDFs with payment schedule terms.", kpi: "64.5% Win Rate" }
-          ]
-        },
-        {
-          id: "mkt-screen-2",
-          label: "Template & Version Drawer",
-          filename: "/screenshots/floor5_marketing_versions.png",
-          description: "Master proposal templates with visual diff comparison between version releases.",
-          hotspots: [
-            { id: "hs-m3", x: 50, y: 35, title: "Revision History & Diffs", description: "Inspect changes made to template terms and rollback with one click.", kpi: "24 Master Templates" }
-          ]
-        },
-        {
-          id: "mkt-screen-3",
-          label: "Campaign Analytics Matrix",
-          filename: "/screenshots/floor5_marketing_campaigns.png",
-          description: "Campaign performance metrics tracking clicks, open rates, and closed revenue.",
-          hotspots: [
-            { id: "hs-m4", x: 45, y: 65, title: "Revenue Attribution", description: "Directly links incoming CRM deals back to the originating campaign.", kpi: "340% ROI" }
+            { id: "hs-sc1", x: 26, y: 32, title: "Purchase Order Matrix", description: "Automated RFQs and multi-tier approval chains.", kpi: "PO Automation" },
+            { id: "hs-sc2", x: 74, y: 32, title: "Goods Receipt & QC", description: "Digital GRN processing and quality check workflows.", kpi: "Digital GRN" }
           ]
         }
       ],
       quickStats: [
-        { label: "Turnaround Time", value: "< 5 Minutes" },
-        { label: "Proposal Acceptance", value: "64.5%" },
-        { label: "Active Campaigns", value: "8 Live Campaigns" }
+        { label: "Module", value: "Supply Chain Core" },
+        { label: "Workflow", value: "RFQ → PO → GRN" },
+        { label: "Fulfillment", value: "Pick-Pack-Ship" }
       ]
     },
 
     liveErp: {
-      url: "https://demo.core360-erp.enterprise.internal/marketing",
-      moduleName: "Marketing Automation & Offer Suite v4.1",
-      deepLinkRoute: "/marketing/offer-generator",
-      demoRecordId: "OFFER-CORE-2026-772"
+      url: "https://demo.core360-erp.enterprise.internal/supply-chain",
+      moduleName: "Supply Chain Core · Procurement & Logistics Suite",
+      deepLinkRoute: "/supply-chain/purchase-orders",
+      demoRecordId: "PO-CORE-2026-991"
     },
 
     presenterNotes: [
-      "Demonstrate how proposal generation is reduced from 2 days to under 5 minutes.",
-      "Show the Template Versioning Engine with side-by-side revision comparisons.",
-      "Highlight the margin guardrails ensuring every generated offer remains profitable."
+      "Title: Supply Chain Core - End-to-end procurement, vendor collaboration, and fulfillment lifecycle.",
+      "Explain the 5 core components: Procurement workflows (RFQs & POs), Supplier relationship scorecards, Goods Receipt with QC, Demand forecasting, and pick-pack-ship logistics.",
+      "Highlight how supply chain seamlessly connects sales orders to warehouse inventory and purchase orders."
     ],
 
     talkingPoints: [
-      "Dynamic proposal builder reducing quote turnaround to under 5 minutes.",
-      "Master template versioning engine with complete revision history and diff audits.",
-      "Omnichannel campaigns with direct revenue attribution back to CRM deals."
+      "1. Procurement & Purchase Order Workflow: Automated RFQs, PO generation, and multi-tier approvals.",
+      "2. Supplier & Vendor Relationship Hub: Centralized directory with performance scorecards.",
+      "3. Goods Receipt & Quality Inspection (QC): Digital GRN logging with pass/fail workflows.",
+      "4. Demand Forecasting & Replenishment: Predictive analytics preventing stockouts.",
+      "5. Logistics & Order Fulfillment: Seamless sales order to pick-pack-ship lifecycle."
     ]
   },
 
-  // 🏢 FLOOR 6: Executive Command Center, AI Analytics & Security
+  // 🏢 FLOOR 6: My Workspace Core
   {
     id: "executive",
-    name: "Executive Command Center, AI Analytics & Security",
-    code: "EXEC-06",
+    name: "My Workspace Core",
+    code: "WRK-06",
     floor: 6,
     roomNumber: "Penthouse Suite",
-    icon: "Shield",
+    icon: "LayoutDashboard",
     accentColor: "#eab308",
     glowColor: "rgba(234, 179, 8, 0.4)",
     themeGradient: "from-amber-500/20 to-yellow-500/5",
@@ -1126,120 +1106,113 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
     realisticRoomImage: "/office_boardroom_command.jpg",
 
     hero: {
-      badge: "Unified Enterprise Governance",
-      title: "Executive Command Center, AI Analytics & Security",
-      subtitle: "Holistic 360-degree business intelligence, multi-gateway payment configurations, system audit logs, and granular RBAC security matrix.",
-      overview: "The Executive Command Center synthesizes real-time telemetry from all 6 ERP modules into high-density boardroom dashboards, automated security guards, and financial health indexes.",
-      statHeadline: "Monthly Recurring Revenue",
-      statValue: "$312,000",
-      statChange: "99.98% System Uptime"
+      badge: "Employee Productivity Hub",
+      title: "CORE 360 · MY WORKSPACE CORE · EMPLOYEE PRODUCTIVITY",
+      subtitle: "Personalized employee dashboard, daily productivity suite, and task control center.",
+      overview: "Personalized employee dashboard, daily productivity suite, and task control center.",
+      statHeadline: "MY WORKSPACE CORE",
+      statValue: "Productivity & Task Center",
+      statChange: "Unified Employee Suite"
     },
 
     kpis: [
-      { id: "e_uptime", label: "System Availability & Uptime", value: "99.98%", subtext: "Zero critical service outages", trend: "up", trendValue: "99.98% SLA" },
-      { id: "e_mrr", label: "Monthly Recurring Revenue", value: "$312,000", subtext: "Target: $290,000 (+7.6%)", trend: "up", trendValue: "+7.6% Above Target" },
-      { id: "e_gateways", label: "Active Payment Gateways", value: "Stripe, PayPal, Paymob", subtext: "Multi-gateway settlement active", trend: "neutral", trendValue: "3 Configured" },
-      { id: "e_rbac", label: "Security & RBAC Policies", value: "100% Audited", subtext: "Granular role-based controls", trend: "up", trendValue: "OWASP Compliant" }
+      { id: "wrk-dash", label: "1. UNIFIED ACTION DASHBOARD", value: "Action Dashboard", subtext: "Personalized overview of assigned tasks, pending approvals, upcoming deadlines, and key role-specific metrics.", trend: "up", trendValue: "Role-Specific" },
+      { id: "wrk-ess", label: "2. SELF-SERVICE HR & ATTENDANCE", value: "Self-Service HR", subtext: "Clock-in/out, leave requests, timesheet tracking, payroll slips, and expense claim submissions.", trend: "up", trendValue: "Attendance & ESS" },
+      { id: "wrk-comms", label: "3. COLLABORATION & INTERNAL COMMS", value: "Collaboration Hub", subtext: "Integrated company announcements, cross-department notifications, direct mentions, and team message feeds.", trend: "up", trendValue: "Company Feeds" },
+      { id: "wrk-approval", label: "4. WORKFLOW & APPROVAL HUB", value: "Approval Inbox", subtext: "One-click approval inbox for purchase requests, invoices, discount authorizations, and workflow delegations.", trend: "up", trendValue: "1-Click Approvals" }
     ],
 
     features: [
       {
-        id: "exec-1",
-        title: "Cross-Department Unified BI",
-        description: "Live correlation between sales pipeline, workforce headcount, payroll disbursements, support CSAT, and marketing ROI.",
-        icon: "Activity",
-        metric: "360°",
-        metricLabel: "Holistic Vision",
-        tags: ["Cross-Silo", "BI Telemetry", "Health Index"]
+        id: "wrk-1",
+        title: "Unified Action Dashboard",
+        description: "Personalized overview of assigned tasks, pending approvals, upcoming deadlines, and key role-specific metrics.",
+        icon: "Layout",
+        metric: "Core",
+        metricLabel: "Dashboard",
+        tags: ["Tasks", "Deadlines", "Role Metrics"]
       },
       {
-        id: "exec-2",
-        title: "Payment Gateway Manager",
-        description: "Configure Stripe, PayPal, and Paymob API credentials, toggle test/live modes, and audit transaction settlements in real time.",
-        icon: "CreditCard",
-        metric: "3 Gateways",
-        metricLabel: "Settlement Rails",
-        tags: ["Stripe", "PayPal", "Paymob", "Gateways"]
+        id: "wrk-2",
+        title: "Self-Service HR & Attendance",
+        description: "Clock-in/out, leave requests, timesheet tracking, payroll slips, and expense claim submissions.",
+        icon: "UserCheck2",
+        metric: "Core",
+        metricLabel: "ESS",
+        tags: ["Clock-In/Out", "Leaves", "Pay Slips", "Expenses"]
       },
       {
-        id: "exec-3",
-        title: "Role-Based Access Control (RBAC)",
-        description: "Granular permission matrix defining read, write, edit, and delete scopes for Admins, Managers, HR, Sales, and Support.",
-        icon: "Lock",
-        metric: "Granular",
-        metricLabel: "RBAC Matrix",
-        tags: ["Security", "RBAC", "JWT", "Permissions"]
+        id: "wrk-3",
+        title: "Collaboration & Internal Comms",
+        description: "Integrated company announcements, cross-department notifications, direct mentions, and team message feeds.",
+        icon: "MessageSquare",
+        metric: "Core",
+        metricLabel: "Comms",
+        tags: ["Announcements", "Mentions", "Team Feeds"]
       },
       {
-        id: "exec-4",
-        title: "Cryptographic Audit Log Monitor",
-        description: "Immutable event logging recording every user action, login attempt, data export, and permission modification.",
-        icon: "ShieldAlert",
-        metric: "Immutable",
-        metricLabel: "Audit Trail",
-        tags: ["Audit Logs", "Compliance", "Security"]
+        id: "wrk-4",
+        title: "Workflow & Approval Hub",
+        description: "One-click approval inbox for purchase requests, invoices, discount authorizations, and workflow delegations.",
+        icon: "CheckSquare",
+        metric: "Core",
+        metricLabel: "Approvals",
+        tags: ["PO Approvals", "Invoices", "Delegations"]
+      },
+      {
+        id: "wrk-5",
+        title: "Custom Shortcuts & Quick Actions",
+        description: "Personalized navigation bar with custom quick-action buttons to launch common tasks instantly.",
+        icon: "Sparkles",
+        metric: "Core",
+        metricLabel: "Shortcuts",
+        tags: ["Quick Actions", "Custom Navigation", "Productivity"]
       }
     ],
 
     showcase: {
       type: "screenshot",
-      mockTitle: "Core 360 ERP — Executive Boardroom Cockpit",
-      mockSubtitle: "Unified BI Telemetry, Payment Gateway Configurator & Audit Log Monitor",
+      mockTitle: "My Workspace Core & Productivity Dashboard",
+      mockSubtitle: "Personalized employee dashboard, daily productivity suite, and task control center.",
       primaryScreenshot: "/screenshots/floor6_executive_bi.png",
       subScreens: [
         {
-          id: "exec-screen-1",
-          label: "Executive KPI Command Center",
+          id: "wrk-screen-1",
+          label: "My Workspace Core & Productivity Dashboard",
           filename: "/screenshots/floor6_executive_bi.png",
-          description: "High-density executive dashboard synthesizing cross-department metrics into unified charts.",
+          description: "Personalized employee dashboard, daily productivity suite, and task control center.",
           hotspots: [
-            { id: "hs-e1", x: 25, y: 32, title: "Consolidated Revenue Pulse", description: "Streams live billing data across all commercial deals and recurring contracts.", kpi: "$312,000 MRR" },
-            { id: "hs-e2", x: 75, y: 32, title: "Operational Health Index", description: "Aggregates uptime, support SLA, payroll precision, and sales velocity.", kpi: "99.98% Uptime" }
-          ]
-        },
-        {
-          id: "exec-screen-2",
-          label: "Payment Gateway Configurator",
-          filename: "/screenshots/floor6_executive_gateways.png",
-          description: "Management panel for Stripe, PayPal, and Paymob API credentials with test mode toggles.",
-          hotspots: [
-            { id: "hs-e3", x: 50, y: 35, title: "Multi-Gateway Settlement", description: "Allows clients to pay via international (Stripe/PayPal) or local (Paymob) rails.", kpi: "3 Gateways Configured" }
-          ]
-        },
-        {
-          id: "exec-screen-3",
-          label: "RBAC & Audit Log Monitor",
-          filename: "/screenshots/floor6_executive_audit.png",
-          description: "Live cryptographic event log and role permission assignment grid.",
-          hotspots: [
-            { id: "hs-e4", x: 45, y: 65, title: "Immutable Event Ledger", description: "Records timestamped user logins, data modifications, and privilege changes.", kpi: "100% Audited" }
+            { id: "hs-w1", x: 25, y: 32, title: "Personal Task & Metric Overview", description: "Real-time task assignments and deadline notifications.", kpi: "Action Center" },
+            { id: "hs-w2", x: 75, y: 32, title: "One-Click Approval Queue", description: "Direct authorizations for requests, discounts, and workflow steps.", kpi: "Instant Approval" }
           ]
         }
       ],
       quickStats: [
-        { label: "System Uptime", value: "99.98%" },
-        { label: "MRR", value: "$312,000" },
-        { label: "Active Gateways", value: "Stripe, PayPal, Paymob" }
+        { label: "Module", value: "My Workspace Core" },
+        { label: "Productivity", value: "Tasks & Deadlines" },
+        { label: "Approvals", value: "1-Click Hub" }
       ]
     },
 
     liveErp: {
-      url: "https://demo.core360-erp.enterprise.internal/executive",
-      moduleName: "Executive Command & BI Intelligence v7.5",
-      deepLinkRoute: "/executive/command-center",
-      demoRecordId: "BOARDROOM-MEETING-Q3-LIVE"
+      url: "https://demo.core360-erp.enterprise.internal/workspace",
+      moduleName: "My Workspace Core · Employee Productivity Suite",
+      deepLinkRoute: "/workspace/dashboard",
+      demoRecordId: "WORKSPACE-USER-2026"
     },
 
     presenterNotes: [
-      "This is the climactic moment of the presentation: Core 360 ERP unifies all 6 functional silos into a singular intelligent brain.",
-      "Showcase the Payment Gateway integration (Stripe, PayPal, Paymob) demonstrating production-readiness.",
-      "Highlight the granular RBAC security matrix protecting sensitive company data."
+      "Title: My Workspace Core - Personalized employee dashboard, daily productivity suite, and task control center.",
+      "Explain the 5 core features: Action dashboard, self-service HR (clock-in, leaves, slips), internal team collaboration feeds, workflow approval inbox, and custom quick-action shortcuts.",
+      "Highlight how My Workspace empowers individual employee efficiency and centralizes cross-department tasks in one daily hub."
     ],
 
     talkingPoints: [
-      "Unified cross-department business intelligence with zero sync latency.",
-      "Multi-gateway payment architecture with Stripe, PayPal, and Paymob support.",
-      "Granular RBAC permission matrix and immutable cryptographic audit logging."
+      "1. Unified Action Dashboard: Personalized tasks, deadlines, and role-specific KPIs.",
+      "2. Self-Service HR & Attendance: Clock-in/out, leave requests, timesheets, and pay slips.",
+      "3. Collaboration & Internal Comms: Integrated company announcements and team notifications.",
+      "4. Workflow & Approval Hub: One-click approval inbox for invoices and purchase requests.",
+      "5. Custom Shortcuts & Quick Actions: Instant launcher for frequent daily operations."
     ]
   }
 ];
@@ -1249,10 +1222,10 @@ export const PRESENTATION_FLOW = [
   { id: "reception", title: "Reception Desk & Dossier Files", departmentId: null, floor: null, viewType: "reception" },
   { id: "crm", title: "Floor 1: CRM & Sales Management", departmentId: "crm", floor: 1, viewType: "department" },
   { id: "hrm", title: "Floor 2: HRM & People Operations", departmentId: "hrm", floor: 2, viewType: "department" },
-  { id: "payroll", title: "Floor 3: Payroll & Fiscal Engine", departmentId: "payroll", floor: 3, viewType: "department" },
-  { id: "support", title: "Floor 4: Customer Support & SLA", departmentId: "support", floor: 4, viewType: "department" },
-  { id: "marketing", title: "Floor 5: Marketing & Smart Offers", departmentId: "marketing", floor: 5, viewType: "department" },
-  { id: "executive", title: "Floor 6: Executive Command Center", departmentId: "executive", floor: 6, viewType: "department" },
+  { id: "payroll", title: "Floor 3: Accounting Core", departmentId: "payroll", floor: 3, viewType: "department" },
+  { id: "support", title: "Floor 4: Inventory Core", departmentId: "support", floor: 4, viewType: "department" },
+  { id: "marketing", title: "Floor 5: Supply Chain Core", departmentId: "marketing", floor: 5, viewType: "department" },
+  { id: "executive", title: "Floor 6: My Workspace Core", departmentId: "executive", floor: 6, viewType: "department" },
   { id: "whole_org", title: "Whole Organization Synthesis", departmentId: "executive", floor: 6, viewType: "whole_org" },
   { id: "outro", title: "Rooftop Terrace & Acknowledgements", departmentId: null, floor: null, viewType: "outro" }
 ];
