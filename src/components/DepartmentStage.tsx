@@ -35,8 +35,8 @@ export function DepartmentStage({
   onNextDepartment,
   onPrevDepartment
 }: DepartmentStageProps) {
-  // View mode: 'office' (wide room view with working employees) | 'pinboard' (zoomed in corkboard) | 'screen' (expanded screenshot)
-  const [viewMode, setViewMode] = useState<'office' | 'pinboard' | 'screen'>('office');
+  // View mode: 'pinboard' (presentation slide with sticky notes & screenshot) | 'office' (3D room view) | 'screen' (expanded screenshot)
+  const [viewMode, setViewMode] = useState<'office' | 'pinboard' | 'screen'>('pinboard');
   const [activeHotspotId, setActiveHotspotId] = useState<string | null>(null);
 
   const currentFloorIdx = FLOORS_CONFIG.findIndex(f => f.floorNumber === department.floor);
@@ -304,7 +304,7 @@ export function DepartmentStage({
                     <Pin className="w-3 h-3" />
                   </div>
                   <span className="text-xs font-mono font-black text-amber-300 uppercase tracking-widest">
-                    OFFICE WALL PINBOARD · FLOOR 0{department.floor} · {department.name}
+                    {department.id === 'crm' ? 'CORE 360 · CRM MODULE · SALES & CUSTOMER MANAGEMENT' : `OFFICE WALL PINBOARD · FLOOR 0${department.floor} · ${department.name}`}
                   </span>
                 </div>
                 <span className="text-[11px] font-mono text-amber-300/80 hidden sm:block">

@@ -1247,7 +1247,7 @@ export const DEPARTMENTS_CONFIG: DepartmentConfig[] = [
 export const PRESENTATION_FLOW = [
   { id: "hero", title: "Headquarters Entrance", departmentId: null, floor: null, viewType: "hero" },
   { id: "reception", title: "Reception Desk & Dossier Files", departmentId: null, floor: null, viewType: "reception" },
-  { id: "crm", title: "Floor 1: Commercial & CRM", departmentId: "crm", floor: 1, viewType: "department" },
+  { id: "crm", title: "Floor 1: CRM & Sales Management", departmentId: "crm", floor: 1, viewType: "department" },
   { id: "hrm", title: "Floor 2: HRM & People Operations", departmentId: "hrm", floor: 2, viewType: "department" },
   { id: "payroll", title: "Floor 3: Payroll & Fiscal Engine", departmentId: "payroll", floor: 3, viewType: "department" },
   { id: "support", title: "Floor 4: Customer Support & SLA", departmentId: "support", floor: 4, viewType: "department" },
